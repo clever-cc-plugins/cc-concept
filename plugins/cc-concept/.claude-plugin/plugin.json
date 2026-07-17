@@ -1,0 +1,10 @@
+{
+  "name": "cc-concept",
+  "description": "Marketing-strategy skills: positioning, competitive analysis, go-to-market, and campaign concepting",
+  "author": {
+    "name": "Michael van Laar"
+  },
+  "homepage": "https://github.com/clever-cc-plugins/cc-concept",
+  "repository": "https://github.com/clever-cc-plugins/cc-concept",
+  "license": "MIT"
+}

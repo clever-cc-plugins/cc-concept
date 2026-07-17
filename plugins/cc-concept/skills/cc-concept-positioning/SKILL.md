@@ -67,7 +67,7 @@ If **absent**, ask once:
 
 If the user provides usable answers, proceed **non-degraded**. If the user declines
 or the answer is too vague to use, label the organization background section
-**⚠ DEGRADED** in the output and continue.
+**⚠ DEGRADED** in the output and continue. Example format: `## Organization Background ⚠ DEGRADED` followed by a brief note such as "Information not provided."
 
 ### Check competitive landscape
 
@@ -156,7 +156,7 @@ with an organization-profile file or any existing positioning context:
 
 1. Check if `context/brand-positioning.md` exists.
 2. If it exists, generate a distinct filename by appending a `-N` suffix before
-   `.md` (e.g., `context/brand-positioning-2.md`). Never overwrite an existing file.
+   `.md` (e.g., `context/brand-positioning-2.md`). Keep incrementing N (try -2, then -3, etc.) until a filename that does NOT already exist is found. Never overwrite an existing file.
 3. Write to the final, collision-checked filename.
 
 Confirm the file was created, then add a row to the `## Context files` table in

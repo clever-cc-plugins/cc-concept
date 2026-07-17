@@ -20,7 +20,7 @@ defaulting to generic frameworks. This skill runs standalone and also recognizes
 that an existing cc-content project already provides.
 
 This skill follows the shared step sequence in `../_shared/skill-contract.md`. Steps below
-add only onboarding-specific behavior.
+add only onboarding-specific behavior. (Steps 5 and 6 from the contract are omitted because this skill collects multiple context files rather than emitting a single artifact.)
 
 ## Step 0: Recall learnings
 
@@ -90,14 +90,14 @@ positioning, market gaps, differentiation opportunities, and customer pain point
 in Summary: competitor, competitive, competitive landscape, differentiation, market gap,
 positioning, competitive set, pain points.
 
-For each uncovered need, proceed to Step 3. If all needs are covered, skip to Step 4.
+For each uncovered need, proceed to Step 3. If all needs are covered, there is nothing to collect or register; go to Step 7 (Feedback).
 
 ## Step 3: Collect
 
 For each uncovered need, follow one of two paths:
 
 **Path A: Register a passed-in file.** If `$ARGUMENTS` contains a file path, use that as the
-starting point. Read it, confirm it covers the need, and skip to Step 4 to register it.
+starting point for this need. Read it, confirm it covers the need, and continue to collect any remaining uncovered needs. All collected files (passed-in and interviewed) are registered together in Step 4.
 
 **Path B: Guided interview.** For each uncovered need, run a brief interview to collect
 the information. After the interview, write the response to a file with a collision-checked
@@ -107,8 +107,7 @@ name. Apply this collision-check logic:
    the organization need, `context/competitive-landscape.md` for the competitive need).
 2. Check if a file at that path already exists.
 3. If it exists, generate a distinct filename by appending a `-N` suffix before the `.md`
-   extension (e.g., `context/competitive-landscape-2.md`). Never overwrite an existing
-   context file.
+   extension (e.g., `context/competitive-landscape-2.md`). Keep incrementing N (try -2, then -3, etc.) until a filename that does NOT already exist is found. Never overwrite an existing context file.
 4. Write to the final, collision-checked filename.
 
 **Sample interview for organization background:**

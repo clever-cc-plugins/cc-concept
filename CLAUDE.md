@@ -7,17 +7,18 @@ strategic frame, cc-content produces the pieces that execute it.
 
 ## Key Config Files
 
-| File                                            | Purpose                                    |
-| ----------------------------------------------- | ------------------------------------------ |
-| `.claude/format-markdown.sh`                    | TODO: add description                      |
-| `.claude/guard-secret-files.sh`                 | TODO: add description                      |
-| `.claudeignore`                                 | TODO: add description                      |
-| `CLAUDE.md`                                     | Project instructions, loaded every message |
-| `.claude/settings.json`                         | TODO: add description                      |
-| `.githooks/pre-commit`                          | TODO: add description                      |
-| `.gitignore`                                    | TODO: add description                      |
-| `plugins/cc-concept/.claude-plugin/plugin.json` | TODO: add description                      |
-| `scripts/sync-config-table.sh`                  | TODO: add description                      |
+| File                                                       | Purpose                                    |
+| ---------------------------------------------------------- | ------------------------------------------ |
+| `.claude/format-markdown.sh`                               | TODO: add description                      |
+| `.claude/guard-secret-files.sh`                            | TODO: add description                      |
+| `.claudeignore`                                            | TODO: add description                      |
+| `CLAUDE.md`                                                | Project instructions, loaded every message |
+| `.claude/settings.json`                                    | TODO: add description                      |
+| `.githooks/pre-commit`                                     | TODO: add description                      |
+| `.gitignore`                                               | TODO: add description                      |
+| `plugins/cc-concept/.claude-plugin/plugin.json`            | TODO: add description                      |
+| `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md` | TODO: add description                      |
+| `scripts/sync-config-table.sh`                             | TODO: add description                      |
 
 ## Setup
 

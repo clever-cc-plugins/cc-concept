@@ -139,6 +139,21 @@ Fix any gaps before proceeding.
 
 ## Step 6: Delimited output
 
+If Step 2 ended in a degraded state for one or both gated needs (business goals
+and/or target audience), prefix the output with:
+
+```
+⚠ DEGRADED OUTPUT — generated without: <comma-separated list of unmet needs>
+```
+
+For example, if target audience is degraded but business goals are not, prefix with:
+`⚠ DEGRADED OUTPUT — generated without: target audience`
+
+If both are degraded, prefix with:
+`⚠ DEGRADED OUTPUT — generated without: business goals, target audience`
+
+If neither need is degraded, omit the prefix.
+
 Return the campaign concept inside clear delimiters:
 
 ```

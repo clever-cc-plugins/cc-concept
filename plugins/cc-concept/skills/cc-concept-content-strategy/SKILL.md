@@ -127,7 +127,7 @@ Write the content strategy document to `context/content-strategy.md` by conventi
 Confirm the file was created, then add a row to the `## Context files` table in `CLAUDE.md`. Use this format:
 
 ```markdown
-| Content strategy | `context/content-strategy.md` | Editorial planning framework: content pillars, topic clusters, content type mix, publishing cadence |
+| Content strategy | `context/content-strategy.md` | Content strategy: content pillars, topic clusters, content type mix, publishing cadence |
 ```
 
 The Summary must explicitly name "content strategy," "pillars," and "topic clusters" — this wording is what makes the file legible to cc-content-blog-article and cc-content-linkedin-post's Summary-matching; it is functionally part of this requirement, not cosmetic (FR-062).

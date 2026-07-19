@@ -24,6 +24,7 @@ strategic frame, cc-content produces the pieces that execute it.
 | `plugins/cc-concept/skills/cc-concept-learnings-promotion/SKILL.md` | Skill: Review .claude/learnings.md, promote recurring cc-concept patterns or dismiss one-offs        |
 | `plugins/cc-concept/skills/cc-concept-marketing-advisor/SKILL.md`   | Skill: Open-ended strategic advisor with cross-skill deferral and per-turn save-prompt               |
 | `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md`          | Onboarding skill: registers context files and collects gated needs                                   |
+| `plugins/cc-concept/skills/cc-concept-performance-review/SKILL.md`  | TODO: add description                                                                                |
 | `plugins/cc-concept/skills/cc-concept-positioning/SKILL.md`         | Positioning skill: generates brand positioning from a selected framework                             |
 | `scripts/sync-config-table.sh`                                      | Keeps the Key Config Files table in sync on each commit                                              |
 

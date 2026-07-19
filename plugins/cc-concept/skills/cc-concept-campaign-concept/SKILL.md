@@ -34,7 +34,9 @@ the **Summary** column semantically — never against a label or filename:
   organization background (prefer a `cc-concept-positioning` output file if registered)
 
 Note silently if present (do not ask about): competitive landscape, current marketing
-channels, growth stage, brand-specific strategy overrides.
+channels, growth stage, brand-specific strategy overrides, and a prior strategy performance
+review (`cc-concept-performance-review` output) if registered — factor validated/invalidated
+goal bets into the concept.
 
 ## Step 2: Gating — Three-State Model
 

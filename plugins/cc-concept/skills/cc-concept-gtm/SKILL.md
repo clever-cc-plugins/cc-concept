@@ -33,7 +33,8 @@ Read the `## Context files` table in `CLAUDE.md`. Match the following needs agai
   organization background (prefer a `cc-concept-positioning` output file if registered)
 
 Note silently if present (do not ask about): competitive landscape, current marketing channels,
-existing positioning depth.
+existing positioning depth, and a prior strategy performance review (`cc-concept-performance-review`
+output) if registered — factor validated/invalidated milestone bets into the plan.
 
 ## Step 2: Gating — Three-State Model
 

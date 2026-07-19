@@ -28,7 +28,9 @@ the **Summary** column semantically — never against a label or filename:
 - **Business goals/KPIs** — business objectives, targets, success metrics, growth stage
 - **Target audience** — positioning, audience profile, customer segments, buyer personas, organization background (prefer a `cc-concept-positioning` output file if registered)
 
-Note silently if present, never ask about: brand voice, existing content inventory, competitive landscape.
+Note silently if present, never ask about: brand voice, existing content inventory, competitive
+landscape, and a prior strategy performance review (`cc-concept-performance-review` output) if
+registered — factor validated/invalidated pillar bets into the strategy.
 
 ## Step 2: Gating — Three-State Model
 

@@ -30,7 +30,9 @@ Read the `## Context files` table in `CLAUDE.md`. Match the following needs agai
 - **Business goals/KPIs** — campaign objectives, business targets, success metrics, growth stage, revenue targets
 - **Target audience** — positioning, audience profile, customer segments, buyer personas, organization background (prefer a `cc-concept-positioning` output file if registered)
 
-Note silently if present (do not ask about): current marketing channels, budget.
+Note silently if present (do not ask about): current marketing channels, budget, and a
+prior strategy performance review (`cc-concept-performance-review` output) if registered —
+factor validated/invalidated channel bets into the recommendation.
 
 ## Step 2: Gating — Three-State Model
 

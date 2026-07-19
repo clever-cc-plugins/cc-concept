@@ -7,19 +7,20 @@ strategic frame, cc-content produces the pieces that execute it.
 
 ## Key Config Files
 
-| File                                                        | Purpose                                                                  |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------ |
-| `.claude/format-markdown.sh`                                | PostToolUse hook: formats Markdown files with prettier after edits       |
-| `.claude/guard-secret-files.sh`                             | PreToolUse hook: blocks reads/edits/writes of secret .env files          |
-| `.claudeignore`                                             | Paths excluded from Claude Code indexing                                 |
-| `CLAUDE.md`                                                 | Project instructions, loaded every message                               |
-| `.claude/settings.json`                                     | Permissions, hooks, environment variables                                |
-| `.githooks/pre-commit`                                      | Secret scanning (gitleaks) + CLAUDE.md table sync                        |
-| `.gitignore`                                                | Git ignore patterns                                                      |
-| `plugins/cc-concept/.claude-plugin/plugin.json`             | Plugin manifest                                                          |
-| `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md`  | Onboarding skill: registers context files and collects gated needs       |
-| `plugins/cc-concept/skills/cc-concept-positioning/SKILL.md` | Positioning skill: generates brand positioning from a selected framework |
-| `scripts/sync-config-table.sh`                              | Keeps the Key Config Files table in sync on each commit                  |
+| File                                                             | Purpose                                                                  |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `.claude/format-markdown.sh`                                     | PostToolUse hook: formats Markdown files with prettier after edits       |
+| `.claude/guard-secret-files.sh`                                  | PreToolUse hook: blocks reads/edits/writes of secret .env files          |
+| `.claudeignore`                                                  | Paths excluded from Claude Code indexing                                 |
+| `CLAUDE.md`                                                      | Project instructions, loaded every message                               |
+| `.claude/settings.json`                                          | Permissions, hooks, environment variables                                |
+| `.githooks/pre-commit`                                           | Secret scanning (gitleaks) + CLAUDE.md table sync                        |
+| `.gitignore`                                                     | Git ignore patterns                                                      |
+| `plugins/cc-concept/.claude-plugin/plugin.json`                  | Plugin manifest                                                          |
+| `plugins/cc-concept/skills/cc-concept-campaign-concept/SKILL.md` | TODO: add description                                                    |
+| `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md`       | Onboarding skill: registers context files and collects gated needs       |
+| `plugins/cc-concept/skills/cc-concept-positioning/SKILL.md`      | Positioning skill: generates brand positioning from a selected framework |
+| `scripts/sync-config-table.sh`                                   | Keeps the Key Config Files table in sync on each commit                  |
 
 ## Setup
 

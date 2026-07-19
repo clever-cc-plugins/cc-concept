@@ -123,7 +123,7 @@ Body must contain, in order:
 8. **Step 6.5** (`## Step 6.5: Register output`): write the content strategy document to `context/content-strategy.md` by convention. **Apply collision-check logic**: if the file already exists, append a `-N` suffix before `.md` (try `-2`, then `-3`, etc.) until a filename that does not already exist is found — never overwrite an existing file. Confirm the file was created, then add a row to the `## Context files` table in `CLAUDE.md`. Include this exact example row:
 
    ```markdown
-   | Content strategy | `context/content-strategy.md` | Editorial planning framework: content pillars, topic clusters, content type mix, publishing cadence |
+   | Content strategy | `context/content-strategy.md` | Content strategy: content pillars, topic clusters, content type mix, publishing cadence |
    ```
 
    State explicitly: `The Summary must explicitly name "content strategy," "pillars," and "topic clusters" — this wording is what makes the file legible to cc-content-blog-article and cc-content-linkedin-post's Summary-matching; it is functionally part of this requirement, not cosmetic (FR-062).` Do **not** hand-edit the **Key Config Files** table — the pre-commit hook owns that sync.

@@ -18,6 +18,7 @@ strategic frame, cc-content produces the pieces that execute it.
 | `.gitignore`                                                      | Git ignore patterns                                                       |
 | `plugins/cc-concept/.claude-plugin/plugin.json`                   | Plugin manifest                                                           |
 | `plugins/cc-concept/skills/cc-concept-campaign-concept/SKILL.md`  | Skill: Build a campaign concept and hand it off to cc-content as brief.md |
+| `plugins/cc-concept/skills/cc-concept-channel-advisor/SKILL.md`   | TODO: add description                                                     |
 | `plugins/cc-concept/skills/cc-concept-marketing-advisor/SKILL.md` | TODO: add description                                                     |
 | `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md`        | Onboarding skill: registers context files and collects gated needs        |
 | `plugins/cc-concept/skills/cc-concept-positioning/SKILL.md`       | Positioning skill: generates brand positioning from a selected framework  |

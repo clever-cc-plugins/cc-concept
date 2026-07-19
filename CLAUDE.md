@@ -19,6 +19,7 @@ strategic frame, cc-content produces the pieces that execute it.
 | `plugins/cc-concept/.claude-plugin/plugin.json`                   | Plugin manifest                                                                        |
 | `plugins/cc-concept/skills/cc-concept-campaign-concept/SKILL.md`  | Skill: Build a campaign concept and hand it off to cc-content as brief.md              |
 | `plugins/cc-concept/skills/cc-concept-channel-advisor/SKILL.md`   | Skill: Recommend a RACE-sequenced channel mix for a goal, audience, and budget         |
+| `plugins/cc-concept/skills/cc-concept-content-strategy/SKILL.md`  | TODO: add description                                                                  |
 | `plugins/cc-concept/skills/cc-concept-marketing-advisor/SKILL.md` | Skill: Open-ended strategic advisor with cross-skill deferral and per-turn save-prompt |
 | `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md`        | Onboarding skill: registers context files and collects gated needs                     |
 | `plugins/cc-concept/skills/cc-concept-positioning/SKILL.md`       | Positioning skill: generates brand positioning from a selected framework               |

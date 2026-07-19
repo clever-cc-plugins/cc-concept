@@ -6,7 +6,7 @@ description: >
   "work on positioning", "define our positioning", "write a positioning statement",
   "differentiate us from competitors", or "position the product". Produces a positioning
   document and registers it as project context.
-allowed-tools: Read, Write, Edit, Bash
+allowed-tools: Read, Write, Edit, Bash, WebSearch, WebFetch
 argument-hint: "[optional: brief or focus for the positioning work]"
 ---
 
@@ -35,6 +35,26 @@ the **Summary** column semantically — never against a label or filename:
   segments, constraints
 - **Competitive landscape** — competitors, positioning, market gaps, differentiation
   opportunities
+
+## Step 1.5: Competitive content scan (optional)
+
+Offer this once, before gating:
+
+> "Want me to research your competitors' recent public content before we position
+> against them? I can pull patterns in messaging and positioning from 2–4 competitors
+> you name. This is optional — skip it and I'll rely on whatever competitive context
+> you already have or supply directly."
+
+- **Declined** → proceed straight to Step 2, unchanged.
+- **Accepted** → ask the owner to name 2–4 competitors. For each, use `WebSearch` and
+  `WebFetch` to pull recent public content (site copy, recent posts or announcements
+  where reachable). Summarize per competitor: **messaging themes**, **stated or
+  apparent differentiation**, **evident gaps or underserved angles**. Present this
+  summary before continuing to Step 2.
+
+This step never blocks either way — it is strictly additive research that, when it
+succeeds, satisfies Step 2's competitive-landscape need (see Step 2 below) rather
+than bypassing that gate.
 
 ## Step 2: Gating — Three-State Model
 
@@ -71,6 +91,10 @@ or the answer is too vague to use, label the organization background section
 
 ### Check competitive landscape
 
+If Step 1.5's competitive content scan ran and produced a summary, treat that summary as **covered** for this need — skip the direct question below entirely, since the
+scan already supplies what it would have asked for. Only run the check below if Step
+1.5 was declined or produced nothing usable.
+
 Search the context table Summary column for semantic matches: competitor, competitive,
 competitive landscape, differentiation, market gap, positioning, competitive set,
 pain points.
@@ -103,6 +127,11 @@ Select a positioning framework from `../_shared/positioning-frameworks.md` follo
 that file's selection process. **State the choice before generating:**
 
 > "Using the [framework name] because [one-sentence reason]."
+
+If a competitive content scan summary is available (from Step 1.5 or supplied
+directly by the owner), use it as the "competitive alternatives" input each framework
+below already asks for — Obviously Awesome's alternatives list, Geoffrey Moore's
+"differentiation" blank, the Perceptual Map's competitor plotting. This is richer input into the same framework logic, not a change to the frameworks themselves.
 
 Apply the framework systematically:
 

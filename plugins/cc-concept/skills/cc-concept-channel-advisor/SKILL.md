@@ -100,7 +100,7 @@ Produce a channel recommendation that includes:
 - **Primary channel(s)** — with rationale tied to the loaded goal and audience.
 - **Supporting channel(s)** — channels that reinforce the primary channel(s).
 - **Tactical recommendations** — at least one concrete tactic per recommended channel.
-- **Existing-channel calls** — for each recommended channel, a maintain/grow/reduce/exit call **if** current channels were loaded; omit this element entirely if no current-channels context is loaded.
+- **Existing-channel calls** — for each existing channel loaded from context, a maintain/grow/reduce/exit call, based on whether the advisor is recommending continued/increased investment (maintain/grow), reduced investment (reduce), or discontinuing it (exit) — including channels the advisor is NOT recommending going forward. Omit this element entirely if no current-channels context is loaded.
 - **Prerequisites** — for any recommended channel where the loaded context suggests it may be out of reach (budget, capability, or skills the user may not have), a "prerequisites" note naming what's missing.
 
 ## Step 5–6: Quality check and delimited output

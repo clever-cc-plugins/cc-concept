@@ -141,6 +141,11 @@ For each persona, check:
    (Interview mode: yes, by definition. Synthesize mode: flag claims appearing in
    only 1 source as "potential outlier" or "single anecdote", don't surface as core
    persona traits.)
+5. **Data adequacy (synthesize mode only)** — Is this persona's segment backed by
+   at least ~5 corroborating sources (research's saturation floor)? If fewer than
+   5, label the persona "proto-persona — needs validation" instead of presenting
+   it as a confirmed persona; still show it, but flag it explicitly in Step 6's
+   output.
 
 If a persona fails the check, revise it before presenting. Do not pass vague
 demographic sketches downstream — they will mislead downstream skills' messaging work.

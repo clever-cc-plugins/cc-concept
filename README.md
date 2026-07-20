@@ -15,18 +15,19 @@ cc-concept runs standalone — it never requires `cc-content` — but recognises
 
 ## At a glance
 
-| Skill                             | What it does                                                                                                                               |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/cc-concept-audience`            | Develops one or more audience personas or ICPs from scratch via interview or synthesis from customer data                                  |
-| `/cc-concept-onboarding`          | Collects any strategic context downstream skills need but the project lacks                                                                |
-| `/cc-concept-positioning`         | Develops product/company positioning and registers it as project context                                                                   |
-| `/cc-concept-campaign-concept`    | Builds a complete campaign concept — goals, audience, key messages, channel mix, creative brief — and hands it off as `brief.md`           |
-| `/cc-concept-channel-advisor`     | Recommends a channel mix and tactics for a goal, audience, and budget                                                                      |
-| `/cc-concept-content-strategy`    | Produces an editorial planning framework — content pillars, topic clusters, mix, cadence — and registers it as context                     |
-| `/cc-concept-gtm`                 | Structures a go-to-market launch plan — audience, positioning, channel sequence, messages, milestones                                      |
-| `/cc-concept-marketing-advisor`   | Open-ended strategic advisor for questions that don't fit a templated skill, with deferral to the more specific ones above                 |
-| `/cc-concept-performance-review`  | Reviews whether a positioning, channel-mix, content-strategy, GTM, or campaign bet actually played out, and recommends the next adjustment |
-| `/cc-concept-learnings-promotion` | Reviews accumulated `.claude/learnings.md` entries and promotes recurring patterns into durable guidance                                   |
+| Skill                              | What it does                                                                                                                               |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `/cc-concept-audience`             | Develops one or more audience personas or ICPs from scratch via interview or synthesis from customer data                                  |
+| `/cc-concept-competitive-research` | Runs a standalone competitive audit covering messaging, positioning, SWOT, market gaps, and content-strategy opportunities                 |
+| `/cc-concept-onboarding`           | Collects any strategic context downstream skills need but the project lacks                                                                |
+| `/cc-concept-positioning`          | Develops product/company positioning and registers it as project context                                                                   |
+| `/cc-concept-campaign-concept`     | Builds a complete campaign concept — goals, audience, key messages, channel mix, creative brief — and hands it off as `brief.md`           |
+| `/cc-concept-channel-advisor`      | Recommends a channel mix and tactics for a goal, audience, and budget                                                                      |
+| `/cc-concept-content-strategy`     | Produces an editorial planning framework — content pillars, topic clusters, mix, cadence — and registers it as context                     |
+| `/cc-concept-gtm`                  | Structures a go-to-market launch plan — audience, positioning, channel sequence, messages, milestones                                      |
+| `/cc-concept-marketing-advisor`    | Open-ended strategic advisor for questions that don't fit a templated skill, with deferral to the more specific ones above                 |
+| `/cc-concept-performance-review`   | Reviews whether a positioning, channel-mix, content-strategy, GTM, or campaign bet actually played out, and recommends the next adjustment |
+| `/cc-concept-learnings-promotion`  | Reviews accumulated `.claude/learnings.md` entries and promotes recurring patterns into durable guidance                                   |
 
 Skills are invoked by bare name (e.g. `/cc-concept-positioning`), never namespaced with the plugin name.
 

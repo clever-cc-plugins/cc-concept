@@ -26,10 +26,25 @@ strategic frame, cc-content produces the pieces that execute it.
 | `plugins/cc-concept/skills/cc-concept-learnings-promotion/SKILL.md`  | Skill: Review .claude/learnings.md, promote recurring cc-concept patterns or dismiss one-offs                                    |
 | `plugins/cc-concept/skills/cc-concept-marketing-advisor/SKILL.md`    | Skill: Open-ended strategic advisor with cross-skill deferral and per-turn save-prompt                                           |
 | `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md`           | Onboarding skill: registers context files and collects gated needs                                                               |
+| `plugins/cc-concept/skills/cc-concept-orchestrator/SKILL.md`         | Skill: Match a business goal to an engagement type and sequence the right subset/order of cc-concept and cc-content skills       |
 | `plugins/cc-concept/skills/cc-concept-performance-review/SKILL.md`   | Skill: Extract concept bets, verdict them against performance data, recommend re-runs                                            |
 | `plugins/cc-concept/skills/cc-concept-positioning/SKILL.md`          | Positioning skill: generates brand positioning from a selected framework; delegates to cc-concept-competitive-research if needed |
 | `plugins/cc-concept/skills/cc-concept-seo-research/SKILL.md`         | Skill: Build keyword-validated topic clusters using Ubersuggest MCP tools or fallback interview-based research                   |
 | `scripts/sync-config-table.sh`                                       | Keeps the Key Config Files table in sync on each commit                                                                          |
+
+## Context files
+
+Project-scope context files registered by cc-concept and cc-content skills. Register new context files by running `/cc-content-promote` or by adding them manually to this table.
+
+| Label                     | Path                                  | Summary                                                                                    |
+| ------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Organization background   | `context/organization-background.md`  | Mission, market position, business model, constraints — gates all downstream skill work    |
+| Audience personas         | `context/audience-personas.md`        | Buyer personas or ICPs from `cc-concept-audience`; gates positioning, campaign, content    |
+| Competitive landscape     | `context/competitive-landscape.md`    | Competitor audit and market gaps from `cc-concept-competitive-research`; gates positioning |
+| Brand positioning         | `context/positioning.md`              | Positioning statement and narrative from `cc-concept-positioning`; gates all downstream    |
+| SEO & topic research      | `context/seo-research.md`             | Keyword-validated topic clusters from `cc-concept-seo-research`; feeds content strategy    |
+| Content strategy          | `context/content-strategy.md`         | Editorial framework, pillars, cadence from `cc-concept-content-strategy`; gates cc-content |
+| Campaign brief / GTM plan | `context/brief.md` / `context/gtm.md` | Campaign concept or launch plan from `cc-concept-campaign-concept` or `cc-concept-gtm`     |
 
 ## Setup
 

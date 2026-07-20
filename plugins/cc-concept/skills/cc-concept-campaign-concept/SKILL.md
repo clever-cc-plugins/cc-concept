@@ -124,6 +124,35 @@ Produce a campaign concept that includes:
   call-to-action, constraints (budget, timeline, resource availability), and suggested
   content formats per channel.
 
+## Step 4a: Generate Success Metrics
+
+Before moving to the quality check, generate an upfront **Success Metrics** section
+that commits to measurement before the campaign runs.
+
+Use the resolved campaign type from Step 3 and the campaign's stated business goals
+to select 2–4 leading/lagging metric pairs from the following table. For each pair:
+
+| Campaign type      | Leading indicator                                                                        | Lagging outcome                                                                 |
+| ------------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Product-launch     | Trial sign-ups / demo requests per week; landing-page conversion rate                    | New-customer revenue / paid conversions; competitive win rate                   |
+| Thought-leadership | Content engagement (scroll depth, time on page), branded search volume, backlinks earned | Marketing-influenced pipeline / qualified inbound leads; share of voice         |
+| Seasonal promotion | Redemption/click rate on the offer, add-to-cart rate, daily ROAS during window           | Incremental revenue (iROAS vs. holdout), margin after discount                  |
+| Retention          | Product/feature adoption rate, weekly active users, time-to-first-value, NPS             | Churn rate / renewal rate; net revenue retention (NRR)                          |
+| Lead-generation    | MQL volume, cost per lead, MQL→SQL conversion rate                                       | SQL→opportunity and opportunity→close rates; marketing-sourced pipeline and CAC |
+| Brand-awareness    | Reach/impressions to _new_ audiences, branded search growth, direct-traffic trend        | Aided/unaided brand recall (survey); share of voice vs. competitors             |
+
+**Output format:** For each selected metric pair, emit:
+
+```
+Bet: <specific claim about what this campaign will achieve for this KPI> | Expected signal: <what success looks like numerically, e.g. "achieve 28% sign-up conversion by Q3"> | Source: campaign concept §Success Metrics
+```
+
+Include exactly 2–4 bets (one leading metric per pair, paired with its lagging outcome).
+
+After the metric bets, add one sentence naming the attribution approach (e.g., "We will report last-touch attribution for all paid channels, acknowledging it under-credits awareness work and should be triangulated with a 'How did you hear?' field on high-intent forms") and one sentence naming the review cadence (e.g., "We will review leading KPIs weekly during the active campaign window and lagging KPIs monthly in steady state").
+
+The Success Metrics section becomes part of the delimited output in Step 6; it will be recognized by `/cc-concept-performance-review` without modification.
+
 ## Step 5: Internal quality check
 
 Review the generated campaign concept for:
@@ -136,6 +165,9 @@ Review the generated campaign concept for:
 - **Framework alignment**: SOSTAC structures the campaign; RACE sequences the channels;
   Message House anchors the messaging.
 - **Consistency**: All sections reinforce the same campaign positioning and objective.
+- **Success Metrics present and in bet-shape**: The Success Metrics section includes
+  2–4 bets in the format `Bet: [claim] | Expected signal: [result] | Source: campaign concept §Success Metrics`,
+  plus sentences on attribution and review cadence.
 
 Fix any gaps before proceeding.
 

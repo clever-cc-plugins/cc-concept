@@ -114,6 +114,39 @@ Produce a GTM plan that includes:
 - **Key messages** — Message House pillars grounded in loaded context.
 - **Launch milestones** — at least three, tied to the Control facet of SOSTAC.
 
+## Step 4a: Generate Success Metrics
+
+Before moving to the quality check, generate an upfront **Success Metrics** section
+that commits to measurement before the launch runs.
+
+Use the resolved launch type from Step 3 and the launch's stated business goals to
+select 2–4 leading/lagging metric pairs from the following table. For each pair keyed
+to a milestone:
+
+| Launch type      | Leading indicator                                                                                     | Lagging outcome                                                                                               |
+| ---------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Product-launch   | Trials started, visitor-to-trial sign-up rate, demos requested, leads generated                       | Monthly product revenue, retention at 7/30/90 days, market share, competitive win rate                        |
+| Feature-release  | Feature-adoption funnel (exposed → activated → used → used-again), time-to-adopt, activation rate     | 30-/90-day feature retention; impact on overall churn/expansion (NRR); expansion revenue                      |
+| Market-expansion | New-customer acquisition in the new segment/geography, CAC in-market, brand awareness/website traffic | Market penetration/share captured, revenue growth and profitability in-market, LTV:CAC, NRR of the new cohort |
+
+**Output format:** For each selected metric pair (one per milestone or strategic goal),
+emit:
+
+```
+Bet: <specific milestone claim and what signals its success> | Expected signal: <what success looks like numerically, e.g. "achieve 40% user activation within 30 days of launch"> | Source: GTM plan §Success Metrics
+```
+
+Include exactly 2–4 bets (one leading metric per pair, paired with its lagging outcome).
+
+After the metric bets, add one sentence naming the attribution approach (e.g., "We will
+track last-touch attribution for paid channels and self-reported 'How did you hear?'
+responses on demo-request and sign-up forms") and one sentence naming the review
+cadence (e.g., "We will review leading KPIs daily during the launch window and weekly
+for 90 days post-launch, then transition to monthly reviews").
+
+The Success Metrics section becomes part of the delimited output in Step 6; it will be
+recognized by `/cc-concept-performance-review` without modification.
+
 ## Step 5–6: Quality check and delimited output
 
 Review the generated GTM plan for:
@@ -124,6 +157,9 @@ Review the generated GTM plan for:
 - **Framework alignment**: SOSTAC structures the plan; RACE sequences the channels; Message House
   anchors the messaging.
 - **Consistency**: All sections reinforce the same launch positioning and objective.
+- **Success Metrics present and in bet-shape**: The Success Metrics section includes
+  2–4 bets in the format `Bet: [milestone] | Expected signal: [result] | Source: GTM plan §Success Metrics`,
+  plus sentences on attribution and review cadence.
 
 Fix any gaps before proceeding.
 

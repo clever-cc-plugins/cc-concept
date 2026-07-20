@@ -205,7 +205,7 @@ Confirm the file was created, then add a row to the `## Context files` table in
 `CLAUDE.md` (or create the table if it does not exist). Use this format:
 
 ```markdown
-| Competitive landscape | `context/competitive-landscape.md` | Competitive teardown, messaging audit, SWOT, share-of-voice, and content-gap analysis across 2–4 competitors; market gaps and underserved angles |
+| Competitive landscape | `context/competitive-landscape.md` | Competitive landscape: competitor teardown, messaging audit, SWOT, share-of-voice, and content-gap analysis across 2–4 competitors; market gaps and underserved angles |
 ```
 
 The Summary must include keywords "competitor", "competitive landscape", and

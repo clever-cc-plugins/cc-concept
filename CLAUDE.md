@@ -28,6 +28,7 @@ strategic frame, cc-content produces the pieces that execute it.
 | `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md`           | Onboarding skill: registers context files and collects gated needs                                                               |
 | `plugins/cc-concept/skills/cc-concept-performance-review/SKILL.md`   | Skill: Extract concept bets, verdict them against performance data, recommend re-runs                                            |
 | `plugins/cc-concept/skills/cc-concept-positioning/SKILL.md`          | Positioning skill: generates brand positioning from a selected framework; delegates to cc-concept-competitive-research if needed |
+| `plugins/cc-concept/skills/cc-concept-seo-research/SKILL.md`         | Skill: Build keyword-validated topic clusters using Ubersuggest MCP tools or fallback interview-based research                   |
 | `scripts/sync-config-table.sh`                                       | Keeps the Key Config Files table in sync on each commit                                                                          |
 
 ## Setup

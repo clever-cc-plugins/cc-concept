@@ -18,11 +18,11 @@ strategic frame, cc-content produces the pieces that execute it.
 | `.gitignore`                                                         | Git ignore patterns                                                                                                              |
 | `plugins/cc-concept/.claude-plugin/plugin.json`                      | Plugin manifest                                                                                                                  |
 | `plugins/cc-concept/skills/cc-concept-audience/SKILL.md`             | Skill: Develop audience personas or ICPs via interview or synthesis from customer data                                           |
-| `plugins/cc-concept/skills/cc-concept-campaign-concept/SKILL.md`     | Skill: Build a campaign concept and hand it off to cc-content as brief.md                                                        |
+| `plugins/cc-concept/skills/cc-concept-campaign-concept/SKILL.md`     | Skill: Build a campaign concept with upfront success metrics and hand it off to cc-content as brief.md                           |
 | `plugins/cc-concept/skills/cc-concept-channel-advisor/SKILL.md`      | Skill: Recommend a RACE-sequenced channel mix for a goal, audience, and budget                                                   |
 | `plugins/cc-concept/skills/cc-concept-competitive-research/SKILL.md` | Skill: Run a standalone competitive audit covering messaging, positioning, SWOT, and market gaps                                 |
 | `plugins/cc-concept/skills/cc-concept-content-strategy/SKILL.md`     | Skill: Produce a content strategy (pillars, topic clusters, mix, cadence) and register it as context                             |
-| `plugins/cc-concept/skills/cc-concept-gtm/SKILL.md`                  | Skill: Structure a go-to-market launch plan with an optional brief.md by-product                                                 |
+| `plugins/cc-concept/skills/cc-concept-gtm/SKILL.md`                  | Skill: Structure a go-to-market launch plan with upfront success metrics and an optional brief.md by-product                     |
 | `plugins/cc-concept/skills/cc-concept-learnings-promotion/SKILL.md`  | Skill: Review .claude/learnings.md, promote recurring cc-concept patterns or dismiss one-offs                                    |
 | `plugins/cc-concept/skills/cc-concept-marketing-advisor/SKILL.md`    | Skill: Open-ended strategic advisor with cross-skill deferral and per-turn save-prompt                                           |
 | `plugins/cc-concept/skills/cc-concept-onboarding/SKILL.md`           | Onboarding skill: registers context files and collects gated needs                                                               |

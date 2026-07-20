@@ -17,6 +17,7 @@ cc-concept runs standalone — it never requires `cc-content` — but recognises
 
 | Skill                             | What it does                                                                                                                               |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `/cc-concept-audience`            | Develops one or more audience personas or ICPs from scratch via interview or synthesis from customer data                                  |
 | `/cc-concept-onboarding`          | Collects any strategic context downstream skills need but the project lacks                                                                |
 | `/cc-concept-positioning`         | Develops product/company positioning and registers it as project context                                                                   |
 | `/cc-concept-campaign-concept`    | Builds a complete campaign concept — goals, audience, key messages, channel mix, creative brief — and hands it off as `brief.md`           |

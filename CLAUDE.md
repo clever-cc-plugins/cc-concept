@@ -17,6 +17,7 @@ strategic frame, cc-content produces the pieces that execute it.
 | `.githooks/pre-commit`                                              | Secret scanning (gitleaks) + CLAUDE.md table sync                                                           |
 | `.gitignore`                                                        | Git ignore patterns                                                                                         |
 | `plugins/cc-concept/.claude-plugin/plugin.json`                     | Plugin manifest                                                                                             |
+| `plugins/cc-concept/skills/cc-concept-audience/SKILL.md`            | Skill: Develop audience personas or ICPs via interview or synthesis from customer data                      |
 | `plugins/cc-concept/skills/cc-concept-campaign-concept/SKILL.md`    | Skill: Build a campaign concept and hand it off to cc-content as brief.md                                   |
 | `plugins/cc-concept/skills/cc-concept-channel-advisor/SKILL.md`     | Skill: Recommend a RACE-sequenced channel mix for a goal, audience, and budget                              |
 | `plugins/cc-concept/skills/cc-concept-content-strategy/SKILL.md`    | Skill: Produce a content strategy (pillars, topic clusters, mix, cadence) and register it as context        |

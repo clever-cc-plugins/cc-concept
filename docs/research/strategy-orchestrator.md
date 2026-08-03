@@ -3,7 +3,7 @@
 
 ---
 
-## ChatGPT (source: `cc-concept-orchestrator-chatgpt.md`)
+## ChatGPT (source: `strategy-orchestrator-chatgpt.md`)
 
 # 1. Taxonomie gängiger Marketing-Engagement-Typen  
 - **Produkteinführung:** Einführung eines neuen Produkts in den Markt. Ein Produkteinführungs-Engagement umfasst die Planung und Umsetzung aller Maßnahmen, um das Produkt bekanntzumachen und Nachfrage zu generieren. Beispiel: Ein Unternehmen bringt einen neu entwickelten Software-Service auf den Markt.  
@@ -144,7 +144,7 @@ Senior-Marketingstrukturen präsentieren die empfohlene Sequenz meist als schlü
 
 ---
 
-## Claude (source: `cc-concept-orchestrator-claude.md`)
+## Claude (source: `strategy-orchestrator-claude.md`)
 
 # The Engagement-Type Playbook: Matching Marketing Value-Chain Stages to Business Goals
 
@@ -337,7 +337,7 @@ WARC / Deloitte–Duke Fuqua–AMA. (2024). *Performance budgets rise at the exp
 
 ---
 
-## Consensus (source: `cc-concept-orchestrator-consensus.md`)
+## Consensus (source: `strategy-orchestrator-consensus.md`)
 
 # Taxonomie **von Marketing-Engagements**
 
@@ -464,7 +464,7 @@ Terho, H., Mero, J., Siutla, L., & Jaakkola, E. (2022). Digital content marketin
 
 ---
 
-## DeepSeek (source: `cc-concept-orchestrator-deepseek.md`)
+## DeepSeek (source: `strategy-orchestrator-deepseek.md`)
 
 # Marketing Engagement Scoping: A Fractional CMO's Framework for Value-Chain Sequencing
 
@@ -779,7 +779,7 @@ VCMO. (2023, October 23). _How a fractional CMO engagement starts: Step-by-step_
 
 ---
 
-## Gemini (source: `cc-concept-orchestrator-gemini.md`)
+## Gemini (source: `strategy-orchestrator-gemini.md`)
 
 # **Scoping the Marketing Value Chain: A Decision Framework and Sequencing Taxonomy for Fractional Leaders**
 
@@ -1138,7 +1138,7 @@ If the client chooses to bypass strategic positioning, the strategist formally d
 
 ---
 
-## Perplexity (source: `cc-concept-orchestrator-perplexity.md`)
+## Perplexity (source: `strategy-orchestrator-perplexity.md`)
 
 ## 1. Taxonomy of Marketing Engagement Types
 

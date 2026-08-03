@@ -3,7 +3,7 @@
 
 ---
 
-## ChatGPT (source: `cc-concept-seo-research-chatgpt.md`)
+## ChatGPT (source: `seo-research-chatgpt.md`)
 
 # 1. Toolgestützter Workflow: Wichtige Kennzahlen und Analyse  
 In einem typischen SEO-Workflow startet man mit einer Liste von **Seed-Keywords** und arbeitet sie mit Tools (Ahrefs, SEMrush, Ubersuggest, Google Keyword Planner etc.) auf. Üblicherweise erhebt man für jeden Begriff Kennzahlen wie **Suchvolumen** (durchschnittliche monatliche Suchanfragen), **Keyword-Schwierigkeit** (eine Metrik für den Wettbewerbsgrad), **CPC bzw. Wettbewerb** (für bezahlte Suche) und **Trend**. Tools wie Ahrefs und Semrush zeigen darüber hinaus oft ein „**Click-Potential**“ (geschätzte Klicks durch organische Treffer) sowie die **SERP-Features** (z.B. Featured Snippet, „Ähnliche Fragen“, Bilder, Videos) an. Zudem bieten viele Tools eine **Content-Gap-Analyse**: Sie ermitteln Keywords, für die Konkurrenten ranken, man selbst aber nicht – z.B. Ahrefs’ „Content Gap“. 
@@ -58,7 +58,7 @@ Professionelle Content-Strategien nutzen daher eine **gewichtete Balance**: Sie 
 
 ---
 
-## Claude (source: `cc-concept-seo-research-claude.md`)
+## Claude (source: `seo-research-claude.md`)
 
 # Topic-Cluster Research: A Repeatable Process for Tool-Assisted and No-Tool Workflows
 
@@ -231,7 +231,7 @@ Soulo, T. (n.d.). *Long-tail keywords: What they are and how to get search traff
 
 ---
 
-## Consensus (source: `cc-concept-seo-research-consensus.md`)
+## Consensus (source: `seo-research-consensus.md`)
 
 # **Wiederholbarer Prozess** für Topic-Cluster
 
@@ -357,7 +357,7 @@ Soekamto, Y. (2024). Improving Publishing: Extracting Keywords and Clustering To
 
 ---
 
-## DeepSeek (source: `cc-concept-seo-research-deepseek.md`)
+## DeepSeek (source: `seo-research-deepseek.md`)
 
 # SEO Topic-Cluster Research Process: A Dual-Path Framework
 
@@ -648,7 +648,7 @@ _claude-skills/skills/seo-competitor/references/content-gap-method.md_. (2026). 
 
 ---
 
-## Gemini (source: `cc-concept-seo-research-gemini.md`)
+## Gemini (source: `seo-research-gemini.md`)
 
 # **Advanced Systemic Frameworks for Topic Cluster Architecture: Integrating Tool-Assisted, Manual, and Strategic Content Workflows**
 
@@ -913,7 +913,7 @@ When scaling content production, especially with the assistance of AI tools, mai
 
 ---
 
-## Perplexity (source: `cc-concept-seo-research-perplexity.md`)
+## Perplexity (source: `seo-research-perplexity.md`)
 
 # Topic-Cluster Research Process: Tool-Assisted and No-Tool Workflows
 

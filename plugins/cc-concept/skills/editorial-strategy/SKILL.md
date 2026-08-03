@@ -1,5 +1,5 @@
 ---
-name: cc-concept-content-strategy
+name: editorial-strategy
 description: >
   Use this skill to produce an editorial planning framework covering content pillars,
   topic clusters, content type mix, and publishing cadence. Invoke when the user asks
@@ -26,10 +26,10 @@ Read the `## Context files` table in `CLAUDE.md`. Match the following needs agai
 the **Summary** column semantically — never against a label or filename:
 
 - **Business goals/KPIs** — business objectives, targets, success metrics, growth stage
-- **Target audience** — positioning, audience profile, customer segments, buyer personas, organization background (prefer a `cc-concept-positioning` output file if registered)
+- **Target audience** — positioning, audience profile, customer segments, buyer personas, organization background (prefer a `positioning` output file if registered)
 
 Note silently if present, never ask about: brand voice, existing content inventory, competitive
-landscape, and a prior strategy performance review (`cc-concept-performance-review` output) if
+landscape, and a prior strategy performance review (`strategy-performance-review` output) if
 registered — factor validated/invalidated pillar bets into the strategy.
 
 ## Step 2: Gating — Three-State Model
@@ -60,7 +60,7 @@ If the user provides a usable answer, proceed **non-degraded**. If the user decl
 
 Search the context table Summary column for semantic matches: target audience, positioning, organization background, customer segments, buyer profile.
 
-Prefer a `cc-concept-positioning` output file's Summary if one is registered; else fall back to organization background.
+Prefer a `positioning` output file's Summary if one is registered; else fall back to organization background.
 
 If **covered**, use silently.
 
@@ -132,17 +132,17 @@ Confirm the file was created, then add a row to the `## Context files` table in 
 | Content strategy | `context/content-strategy.md` | Content strategy: content pillars, topic clusters, content type mix, publishing cadence |
 ```
 
-The Summary must explicitly name "content strategy," "pillars," and "topic clusters" — this wording is what makes the file legible to cc-content-blog-article and cc-content-linkedin-post's Summary-matching; it is functionally part of this requirement, not cosmetic (FR-062).
+The Summary must explicitly name "content strategy," "pillars," and "topic clusters" — this wording is what makes the file legible to blog-article and linkedin-post's Summary-matching; it is functionally part of this requirement, not cosmetic (FR-062).
 
 Do **not** hand-edit the **Key Config Files** table — the pre-commit hook owns that sync.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:cc-concept-content-strategy]` in `.claude/learnings.md`. Examples:
+Store learnings tagged `[cc-concept:editorial-strategy]` in `.claude/learnings.md`. Examples:
 
 ```
-[cc-concept:cc-concept-content-strategy] client prefers thought-leadership pillars over product-led pillars, positions as an industry voice — 2026-07-19
-[cc-concept:cc-concept-content-strategy] client publishes weekly on LinkedIn but only monthly long-form; cadence recommendations should respect that split — 2026-07-19
+[cc-concept:editorial-strategy] client prefers thought-leadership pillars over product-led pillars, positions as an industry voice — 2026-07-19
+[cc-concept:editorial-strategy] client publishes weekly on LinkedIn but only monthly long-form; cadence recommendations should respect that split — 2026-07-19
 ```
 
 If the session revealed a content-strategy preference, framework override, or project constraint that future runs should apply, record it now.

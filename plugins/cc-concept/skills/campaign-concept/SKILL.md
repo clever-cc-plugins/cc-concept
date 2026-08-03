@@ -1,5 +1,5 @@
 ---
-name: cc-concept-campaign-concept
+name: campaign-concept
 description: >
   Use this skill to build a complete campaign concept — goals, target audience, key
   messages, channel mix, and creative brief — from a campaign objective. Invoke when
@@ -31,11 +31,11 @@ the **Summary** column semantically — never against a label or filename:
 - **Business goals/KPIs** — campaign objectives, business targets, success metrics,
   growth stage, revenue targets
 - **Target audience** — positioning, audience profile, customer segments, buyer personas,
-  organization background (prefer a `cc-concept-positioning` output file if registered)
+  organization background (prefer a `positioning` output file if registered)
 
 Note silently if present (do not ask about): competitive landscape, current marketing
 channels, growth stage, brand-specific strategy overrides, and a prior strategy performance
-review (`cc-concept-performance-review` output) if registered — factor validated/invalidated
+review (`strategy-performance-review` output) if registered — factor validated/invalidated
 goal bets into the concept.
 
 ## Step 2: Gating — Three-State Model
@@ -73,7 +73,7 @@ in the output and continue.
 Search the context table Summary column for semantic matches: target audience,
 positioning, organization background, customer segments, buyer profile.
 
-Prefer a `cc-concept-positioning` output file's Summary if one is registered; else
+Prefer a `positioning` output file's Summary if one is registered; else
 fall back to organization background.
 
 If **covered**, use silently.
@@ -151,7 +151,7 @@ Include exactly 2–4 bets (one leading metric per pair, paired with its lagging
 
 After the metric bets, add one sentence naming the attribution approach (e.g., "We will report last-touch attribution for all paid channels, acknowledging it under-credits awareness work and should be triangulated with a 'How did you hear?' field on high-intent forms") and one sentence naming the review cadence (e.g., "We will review leading KPIs weekly during the active campaign window and lagging KPIs monthly in steady state").
 
-The Success Metrics section becomes part of the delimited output in Step 6; it will be recognized by `/cc-concept-performance-review` without modification.
+The Success Metrics section becomes part of the delimited output in Step 6; it will be recognized by `/strategy-performance-review` without modification.
 
 ## Step 5: Internal quality check
 
@@ -220,12 +220,12 @@ a handoff artifact, not persistent context.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:cc-concept-campaign-concept]` in `.claude/learnings.md`.
+Store learnings tagged `[cc-concept:campaign-concept]` in `.claude/learnings.md`.
 Examples:
 
 ```
-[cc-concept:cc-concept-campaign-concept] client rejected the inferred "lead-generation" type for a customer-only campaign; retention fits their base better — 2026-07-18
-[cc-concept:cc-concept-campaign-concept] client prefers email + LinkedIn as primary channels, treats paid social as a last resort — 2026-07-18
+[cc-concept:campaign-concept] client rejected the inferred "lead-generation" type for a customer-only campaign; retention fits their base better — 2026-07-18
+[cc-concept:campaign-concept] client prefers email + LinkedIn as primary channels, treats paid social as a last resort — 2026-07-18
 ```
 
 If the session revealed a campaign-type preference, framework override, or project

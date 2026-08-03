@@ -1,12 +1,12 @@
 ---
-name: cc-concept-orchestrator
+name: strategy-orchestrator
 description: >
   Use this skill when the user states a broad marketing goal without naming a
   specific skill — "help us launch this product", "we need to grow our LinkedIn
   presence", "reposition us against this new competitor" — and needs to know which
   order of cc-concept and cc-content skills to run, not a single deliverable.
   Recommends and sequences skills; never invokes them automatically. Defers to
-  cc-concept-marketing-advisor for open-ended questions that aren't goal-shaped.
+  marketing-advisor for open-ended questions that aren't goal-shaped.
 allowed-tools: Read
 argument-hint: "[the business goal, in the user's own words]"
 ---
@@ -17,7 +17,7 @@ This skill matches a stated business goal to one of six engagement types, audits
 
 **Key principle:** Different engagement types need different subsets of the value chain. A product launch requires all stages; an always-on content program skips formal GTM planning; a crisis response trades depth for speed. This skill's job is to map the goal to its required stages, then recommend only the skills that close the gaps.
 
-**Critical distinction:** This skill _recommends_ skills by bare name (e.g. `/cc-concept-audience`, `/cc-content-linkedin-post`); it never invokes them directly. The user runs each named skill themselves, one at a time, in the suggested sequence.
+**Critical distinction:** This skill _recommends_ skills by bare name (e.g. `/audience-personas`, `/linkedin-post`); it never invokes them directly. The user runs each named skill themselves, one at a time, in the suggested sequence.
 
 ---
 
@@ -33,7 +33,7 @@ Ask once to name the stated business goal. If `$ARGUMENTS` contains a goal, use 
 
 > "What's your marketing goal? (E.g. 'launch a new product', 'grow our LinkedIn presence', 'reposition against a new competitor', or a goal you describe in your own words.)"
 
-Parse the goal against the six engagement types defined in `docs/research/cc-concept-orchestrator.md` § _Taxonomy of Engagement Types_:
+Parse the goal against the six engagement types defined in `docs/research/strategy-orchestrator.md` § _Taxonomy of Engagement Types_:
 
 1. **Product launch (go-to-market)** — introducing a new product or feature to a market; the offer is new or new to this market
 2. **Brand repositioning** — deliberately changing how the brand is perceived; usually triggered by strategy shift, merger, or brand outgrowth
@@ -65,7 +65,7 @@ For each artifact you find, note its Summary column (the one-line description) �
 
 ## Step 3: Determine required value-chain stages
 
-Using the engagement type from Step 1, consult `docs/research/cc-concept-orchestrator.md` § _Stage-by-Stage Necessity Matrix_ (the table listing engagement types and which stages are Y/O/N). Identify which stages are **Y** (required) and **O** (optional but often valuable).
+Using the engagement type from Step 1, consult `docs/research/strategy-orchestrator.md` § _Stage-by-Stage Necessity Matrix_ (the table listing engagement types and which stages are Y/O/N). Identify which stages are **Y** (required) and **O** (optional but often valuable).
 
 ---
 
@@ -75,21 +75,21 @@ For each **required** or **optional** stage, map it to the skill(s) that produce
 
 | Value-chain stage             | Required skill(s)                                                                                                                | Notes                                                                                           |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| **Audience/insight research** | `/cc-concept-audience`                                                                                                           | Produces `context/audience-personas.md`; gates many downstream skills                           |
-| **Competitive research**      | `/cc-concept-competitive-research`                                                                                               | Produces `context/competitive-landscape.md`; required for positioning and GTM                   |
-| **Positioning**               | `/cc-concept-positioning`                                                                                                        | Produces positioning statement and brand narrative; gates content strategy and campaign concept |
-| **Campaign/GTM planning**     | `/cc-concept-gtm` (for product launch, market expansion, brand reposition) or `/cc-concept-campaign-concept` (for campaign push) | GTM produces a phased launch plan; campaign-concept produces a brief for cc-content             |
-| **Content strategy**          | `/cc-concept-content-strategy`                                                                                                   | Produces editorial framework (pillars, topics, cadence); gates all cc-content creation skills   |
-| **SEO/keyword research**      | `/cc-concept-seo-research`                                                                                                       | Optional but often feeds content strategy; produces validated topic clusters                    |
-| **Content production**        | `/cc-content-linkedin-post`, `/cc-content-blog-article`, `/cc-content-text`, etc.                                                | Format-specific drafting skills; routed through `/cc-content-atomize` if multiple formats       |
-| **Distribution**              | `/cc-content-atomize` (if multiple formats) or format-specific skills                                                            | Multi-format repurposing; keeps claims consistent across channels                               |
-| **Measurement**               | `/cc-concept-performance-review` or `/cc-content-performance-review`                                                             | Strategic review (concept bets) vs. content-piece review (structural variants)                  |
+| **Audience/insight research** | `/audience-personas`                                                                                                           | Produces `context/audience-personas.md`; gates many downstream skills                           |
+| **Competitive research**      | `/competitive-research`                                                                                               | Produces `context/competitive-landscape.md`; required for positioning and GTM                   |
+| **Positioning**               | `/positioning`                                                                                                        | Produces positioning statement and brand narrative; gates content strategy and campaign concept |
+| **Campaign/GTM planning**     | `/gtm-plan` (for product launch, market expansion, brand reposition) or `/campaign-concept` (for campaign push) | GTM produces a phased launch plan; campaign-concept produces a brief for cc-content             |
+| **Content strategy**          | `/editorial-strategy`                                                                                                   | Produces editorial framework (pillars, topics, cadence); gates all cc-content creation skills   |
+| **SEO/keyword research**      | `/seo-research`                                                                                                       | Optional but often feeds content strategy; produces validated topic clusters                    |
+| **Content production**        | `/linkedin-post`, `/blog-article`, `/long-tail-copy`, etc.                                                | Format-specific drafting skills; routed through `/atomize` if multiple formats       |
+| **Distribution**              | `/atomize` (if multiple formats) or format-specific skills                                                            | Multi-format repurposing; keeps claims consistent across channels                               |
+| **Measurement**               | `/strategy-performance-review` or `/content-performance-review`                                                             | Strategic review (concept bets) vs. content-piece review (structural variants)                  |
 
 ---
 
 ## Step 5: Check skip conditions
 
-For each required stage, check whether an artifact from Step 2 passes the skip test. Per `docs/research/cc-concept-orchestrator.md` § _Skip-Signals_:
+For each required stage, check whether an artifact from Step 2 passes the skip test. Per `docs/research/strategy-orchestrator.md` § _Skip-Signals_:
 
 - **Audience research:** Skip if personas/ICPs exist, are <6–12 months old, built from primary research (not assumption), and sales/support describe the same customer.
 - **Competitive research:** Skip if a teardown exists, is <6 months old, covers the _same_ market you're addressing, and the category is stable.
@@ -103,7 +103,7 @@ For each required stage, check whether an artifact from Step 2 passes the skip t
 
 Output a delimited block (using triple backticks or a clear visual boundary) containing a numbered sequence. For each skill, include:
 
-1. **Skill name** (bare name, no `/`, e.g. `cc-concept-audience`)
+1. **Skill name** (bare name, no `/`, e.g. `audience-personas`)
 2. **Why** (one-line rationale tied to the engagement type)
 3. **Skip marker if applicable** (e.g., "SKIP — audience-personas.md already registered and <6 months old; sales confirms current usage")
 
@@ -113,25 +113,25 @@ If a required stage is missing and no skip test passed, name the skill unconditi
 Engagement type: Product launch
 Goal: Launch a new software product to SMBs
 
-1. cc-concept-audience — Required for new product: need to understand target SMB buyers, their pain points, and buying process. (Not skipped: no personas on file.)
+1. audience-personas — Required for new product: need to understand target SMB buyers, their pain points, and buying process. (Not skipped: no personas on file.)
 
-2. cc-concept-competitive-research — Required for new product: must know who SMBs see as alternatives and how to differentiate. (Not skipped: no competitive landscape on file.)
+2. competitive-research — Required for new product: must know who SMBs see as alternatives and how to differentiate. (Not skipped: no competitive landscape on file.)
 
-3. cc-concept-positioning — Required for new product: new offer requires new or validated positioning. (Not skipped: no positioning document on file.)
+3. positioning — Required for new product: new offer requires new or validated positioning. (Not skipped: no positioning document on file.)
 
-4. cc-concept-gtm — Required for new product: structure launch phases, milestones, and go/no-go criteria. (Not skipped: no GTM plan on file.)
+4. gtm-plan — Required for new product: structure launch phases, milestones, and go/no-go criteria. (Not skipped: no GTM plan on file.)
 
-5. cc-concept-content-strategy — Required for new product: define content pillars and cadence that support launch messaging. (Not skipped: no content strategy on file.)
+5. editorial-strategy — Required for new product: define content pillars and cadence that support launch messaging. (Not skipped: no content strategy on file.)
 
-6. cc-concept-seo-research — Optional for launch: keyword research will validate pillar topics and improve organic discoverability post-launch. (Recommended but not required.)
+6. seo-research — Optional for launch: keyword research will validate pillar topics and improve organic discoverability post-launch. (Recommended but not required.)
 
-7. cc-content-linkedin-post — Required for new product: create launch-announcement posts for SMB audience and early adopters on LinkedIn.
+7. linkedin-post — Required for new product: create launch-announcement posts for SMB audience and early adopters on LinkedIn.
 
-8. cc-content-blog-article — Required for new product: write thought leadership pieces explaining the product category and why SMBs should care.
+8. blog-article — Required for new product: write thought leadership pieces explaining the product category and why SMBs should care.
 
-9. cc-content-atomize — Recommended: if you want to repurpose launch messaging across multiple channels (LinkedIn, email, blog) while keeping claims identical.
+9. atomize — Recommended: if you want to repurpose launch messaging across multiple channels (LinkedIn, email, blog) while keeping claims identical.
 
-10. cc-concept-performance-review — Recommended post-launch: once launch is live and first results are in, review whether GTM milestones held and positioning messaging resonated.
+10. strategy-performance-review — Recommended post-launch: once launch is live and first results are in, review whether GTM milestones held and positioning messaging resonated.
 ```
 
 ---
@@ -142,7 +142,7 @@ At the end, ask once:
 
 > "Should I save any learnings from this sequence (e.g., 'we always need SEO research for SMB campaigns' or 'we already validate positioning with customers') to `.claude/learnings.md`?"
 
-If the user names a learning, append it with the tag `[cc-concept:cc-concept-orchestrator]` and today's date.
+If the user names a learning, append it with the tag `[cc-concept:strategy-orchestrator]` and today's date.
 
 ---
 

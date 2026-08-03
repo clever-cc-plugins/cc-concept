@@ -1,11 +1,11 @@
 ---
-name: cc-concept-competitive-research
+name: competitive-research
 description: >
   Use this skill to run a standalone competitive or market audit — independent of
   whether a positioning exercise is happening this session. Invoke when the user
   asks to "research our competitors", "run a competitive audit", "who are we up
-  against", "find our market gaps", or when cc-concept-positioning, cc-concept-gtm,
-  or cc-concept-channel-advisor reports a missing "competitive landscape" need.
+  against", "find our market gaps", or when positioning, gtm-plan,
+  or channel-advisor reports a missing "competitive landscape" need.
   Produces context/competitive-landscape.md for any gated skill to consume.
 allowed-tools: Read, Write, Edit, Bash, WebSearch, WebFetch
 argument-hint: "[optional: comma-separated list of named competitors]"
@@ -16,8 +16,8 @@ argument-hint: "[optional: comma-separated list of named competitors]"
 This skill produces a competitive landscape document — a structured audit of 2–4
 named or inferred competitors covering messaging, positioning, content strategy,
 and market gaps. It registers the output as project context for reuse by
-cc-concept-positioning, cc-concept-gtm, cc-concept-channel-advisor,
-cc-concept-content-strategy, and cc-content skills.
+positioning, gtm-plan, channel-advisor,
+editorial-strategy, and cc-content skills.
 
 This skill follows the shared step sequence in `../_shared/skill-contract.md`. Steps
 below add only competitive-research-specific behavior.
@@ -38,7 +38,7 @@ the organization actually does.
 
 Ask once to identify 2–4 competitors:
 
-- **If `$ARGUMENTS` includes competitor names** (e.g. `/cc-concept-competitive-research
+- **If `$ARGUMENTS` includes competitor names** (e.g. `/competitive-research
 Acme, BigCorp, StartupX`) → parse and use them directly; skip the question.
 - **If organization background is loaded and names obvious candidates** (e.g.,
   "competes against Salesforce, HubSpot, Pipedrive") → confirm and use them.
@@ -73,7 +73,7 @@ Consult the brief in `$ARGUMENTS`, if present. Set audit depth and scope:
 ## Step 4: Generate
 
 For each competitor (up to 4), conduct a structured teardown using the framework
-from `docs/research/cc-concept-competitive-research.md` § 1 (repeatable
+from `docs/research/competitive-research.md` § 1 (repeatable
 competitive-content teardown structure). The framework covers:
 
 **A. Identity & positioning**
@@ -209,18 +209,18 @@ Confirm the file was created, then add a row to the `## Context files` table in
 ```
 
 The Summary must include keywords "competitor", "competitive landscape", and
-"market gap" so that gated skills (cc-concept-positioning, cc-concept-gtm,
-cc-concept-channel-advisor) recognize and load it via semantic match — do not
+"market gap" so that gated skills (positioning, gtm-plan,
+channel-advisor) recognize and load it via semantic match — do not
 hand-edit the **Key Config Files** table; the pre-commit hook owns that sync.
 
 ## Step 8: Feedback
 
-Store learnings tagged `[cc-concept:cc-concept-competitive-research]` in
+Store learnings tagged `[cc-concept:competitive-research]` in
 `.claude/learnings.md`. Examples:
 
 ```
-[cc-concept:cc-concept-competitive-research] "share-of-voice" confuses clients; prefer "search visibility" — 2026-07-20
-[cc-concept:cc-concept-competitive-research] industry leads with 5 key vendors, not 2-4; scope as broad audit when user lists >4 — 2026-07-20
+[cc-concept:competitive-research] "share-of-voice" confuses clients; prefer "search visibility" — 2026-07-20
+[cc-concept:competitive-research] industry leads with 5 key vendors, not 2-4; scope as broad audit when user lists >4 — 2026-07-20
 ```
 
 If the session revealed a preferred competitor set, market dynamics, or a framework

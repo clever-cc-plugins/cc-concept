@@ -1,5 +1,5 @@
 ---
-name: cc-concept-onboarding
+name: strategy-onboarding
 description: >
   Use this skill to set up or extend the strategic context a marketing project needs
   before positioning, competitive, or go-to-market work. Invoke when the user asks to
@@ -142,12 +142,12 @@ match the ones in Step 2 so future coverage checks will find it. Do **not** hand
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:cc-concept-onboarding]` in `.claude/learnings.md`. For
+Store learnings tagged `[cc-concept:strategy-onboarding]` in `.claude/learnings.md`. For
 example:
 
 ```
-[cc-concept:cc-concept-onboarding] client prefers "go-to-market plan" over "GTM strategy" — 2026-07-17
-[cc-concept:cc-concept-onboarding] org-background file should ask about primary channels early — 2026-07-17
+[cc-concept:strategy-onboarding] client prefers "go-to-market plan" over "GTM strategy" — 2026-07-17
+[cc-concept:strategy-onboarding] org-background file should ask about primary channels early — 2026-07-17
 ```
 
 If the session revealed a rejected answer, path preference, or project constraint that future

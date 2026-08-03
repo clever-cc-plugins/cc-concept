@@ -1,5 +1,5 @@
 ---
-name: cc-concept-gtm
+name: gtm-plan
 description: >
   Use this skill to structure a go-to-market launch plan for a new product, service,
   feature, or market entry — audience, positioning, channel sequence, key messages, and
@@ -30,10 +30,10 @@ Read the `## Context files` table in `CLAUDE.md`. Match the following needs agai
 - **Business goals/KPIs** — launch objectives, business targets, success metrics, growth
   stage, revenue targets
 - **Target audience** — positioning, audience profile, customer segments, buyer personas,
-  organization background (prefer a `cc-concept-positioning` output file if registered)
+  organization background (prefer a `positioning` output file if registered)
 
 Note silently if present (do not ask about): competitive landscape, current marketing channels,
-existing positioning depth, and a prior strategy performance review (`cc-concept-performance-review`
+existing positioning depth, and a prior strategy performance review (`strategy-performance-review`
 output) if registered — factor validated/invalidated milestone bets into the plan.
 
 ## Step 2: Gating — Three-State Model
@@ -68,7 +68,7 @@ is too vague to use, label the section `## Business Goals ⚠ DEGRADED` in the o
 Search the context table Summary column for semantic matches: target audience, positioning,
 organization background, customer segments, buyer profile.
 
-Prefer a `cc-concept-positioning` output file's Summary if one is registered; else fall back to
+Prefer a `positioning` output file's Summary if one is registered; else fall back to
 organization background.
 
 If **covered**, use silently.
@@ -145,7 +145,7 @@ cadence (e.g., "We will review leading KPIs daily during the launch window and w
 for 90 days post-launch, then transition to monthly reviews").
 
 The Success Metrics section becomes part of the delimited output in Step 6; it will be
-recognized by `/cc-concept-performance-review` without modification.
+recognized by `/strategy-performance-review` without modification.
 
 ## Step 5–6: Quality check and delimited output
 
@@ -193,7 +193,7 @@ Return the GTM plan inside clear delimiters:
 ## Step 6.5: Offer to save as brief.md
 
 This is a Could-priority by-product (FR-072) — the GTM plan's key messages and channel mix,
-packaged the same way cc-concept-campaign-concept packages a campaign brief.
+packaged the same way campaign-concept packages a campaign brief.
 
 After showing the delimited output:
 
@@ -209,15 +209,15 @@ After showing the delimited output:
    covering the launch's key messages and channel mix.
 
 Do **not** register brief.md in the ## Context files table in CLAUDE.md — it is a handoff
-artifact, not persistent context, the same rule cc-concept-campaign-concept follows.
+artifact, not persistent context, the same rule campaign-concept follows.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:cc-concept-gtm]` in `.claude/learnings.md`. Examples:
+Store learnings tagged `[cc-concept:gtm-plan]` in `.claude/learnings.md`. Examples:
 
 ```
-[cc-concept:cc-concept-gtm] client's feature-release launches skip the audience-redefinition step entirely, existing segments always apply — 2026-07-19
-[cc-concept:cc-concept-gtm] client wants milestone dates expressed as week-of-launch offsets (T-4, T-2, T0) rather than calendar dates — 2026-07-19
+[cc-concept:gtm-plan] client's feature-release launches skip the audience-redefinition step entirely, existing segments always apply — 2026-07-19
+[cc-concept:gtm-plan] client wants milestone dates expressed as week-of-launch offsets (T-4, T-2, T0) rather than calendar dates — 2026-07-19
 ```
 
 If the session revealed a launch-type preference, framework override, or project constraint that

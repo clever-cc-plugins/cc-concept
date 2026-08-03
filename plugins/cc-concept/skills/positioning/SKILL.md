@@ -1,5 +1,5 @@
 ---
-name: cc-concept-positioning
+name: positioning
 description: >
   Use this skill to develop or refine product/company positioning — how the offering is
   differentiated, for whom, against which alternatives. Invoke when the user asks to
@@ -38,7 +38,7 @@ the **Summary** column semantically — never against a label or filename:
 
 ## Step 1.5: Offer competitive research (if missing)
 
-This step is now handled by delegating to `/cc-concept-competitive-research` at
+This step is now handled by delegating to `/competitive-research` at
 Step 2 if the competitive landscape is absent. See Step 2 below.
 
 ## Step 2: Gating — Three-State Model
@@ -84,15 +84,15 @@ If **covered**, use the registered competitive landscape context silently.
 
 If **absent**, offer once to delegate:
 
-> "The competitive landscape isn't yet loaded. Want me to run `/cc-concept-competitive-research`
+> "The competitive landscape isn't yet loaded. Want me to run `/competitive-research`
 > before we position? I'll pull messaging, positioning, and market gaps from 2–4
 > competitors you name — then use that for positioning against actual competition.
 > This is optional; I can work with whatever competitive context you supply directly."
 
-- **Accepted** → the user runs (or consents to) `/cc-concept-competitive-research`
+- **Accepted** → the user runs (or consents to) `/competitive-research`
   in a separate step. Pause here and wait for the competitive landscape to be
   registered; then re-run this skill. (Tip: "Run the skill, then come back with
-  `/cc-concept-positioning` to pick up where we left off.")
+  `/positioning` to pick up where we left off.")
 - **Declined** → ask once (only if declined):
 
   > "Understood. Tell me what you know: Who are your main competitors? (2–5 names
@@ -195,12 +195,12 @@ table — the pre-commit hook owns that sync.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:cc-concept-positioning]` in `.claude/learnings.md`.
+Store learnings tagged `[cc-concept:positioning]` in `.claude/learnings.md`.
 Examples:
 
 ```
-[cc-concept:cc-concept-positioning] client prefers "differentiation" over "positioning" — 2026-07-17
-[cc-concept:cc-concept-positioning] SMB segment values cost-of-ownership more than feature breadth — 2026-07-17
+[cc-concept:positioning] client prefers "differentiation" over "positioning" — 2026-07-17
+[cc-concept:positioning] SMB segment values cost-of-ownership more than feature breadth — 2026-07-17
 ```
 
 If the session revealed a rejected framework, positioning preference, or project

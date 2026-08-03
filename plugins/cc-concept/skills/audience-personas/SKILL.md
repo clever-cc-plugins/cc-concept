@@ -1,5 +1,5 @@
 ---
-name: cc-concept-audience
+name: audience-personas
 description: >
   Use this skill to develop one or more audience personas or ICPs from scratch —
   interviewing the owner or synthesizing from pasted customer data (support tickets,
@@ -19,7 +19,7 @@ something already known. This skill is where it gets built, so gated skills upst
 of it stop asking the owner to describe an audience from memory.
 
 Adapts `../_shared/skill-contract.md`'s 8-step sequence. Step 1 differs: this skill
-has no required gate of its own (it is a discoverer, like `cc-concept-onboarding`),
+has no required gate of its own (it is a discoverer, like `strategy-onboarding`),
 but it still loads organization background if registered, since persona work grounded
 in a known mission/offer beats personas built in isolation.
 
@@ -43,11 +43,11 @@ you to build one from scratch?" Branch on the answer:
 - **Synthesize mode:** read the supplied file(s)/pasted text; extract patterns across
   the source data (research recommends minimum 5 corroborating cases per segment
   before drawing conclusions, saturation typically by ~12 interviews). Apply the
-  thematic coding + affinity mapping pipeline from `docs/research/cc-concept-audience.md`
+  thematic coding + affinity mapping pipeline from `docs/research/audience-personas.md`
   § _Synthesizing a Defensible Persona from Raw Qualitative Inputs_.
-- **Interview mode:** run the JTBD question set from `docs/research/cc-concept-audience.md`
+- **Interview mode:** run the JTBD question set from `docs/research/audience-personas.md`
   § _Jobs-to-be-Done (JTBD) Style Interview Question Set_, one question at a time,
-  same one-at-a-time interview rhythm as `cc-concept-onboarding`.
+  same one-at-a-time interview rhythm as `strategy-onboarding`.
 
 ## Step 2: Detect B2B vs. B2C
 
@@ -200,14 +200,14 @@ per persona.]
 The Summary keyword set (ICP, personas, audience, segmentation, jobs, decision) must
 match what other skills' existing "target audience" gates already search for semantically.
 
-**Store learnings** tagged `[cc-concept:cc-concept-audience]` in `.claude/learnings.md`:
+**Store learnings** tagged `[cc-concept:audience-personas]` in `.claude/learnings.md`:
 
 Examples:
 
 ```
-[cc-concept:cc-concept-audience] client prefers "buyer personas" over "audience segments" — 2026-07-20
-[cc-concept:cc-concept-audience] org's B2B buying committee has 6 distinct roles; 5 personas covers the critical path — 2026-07-20
-[cc-concept:cc-concept-audience] synthesize mode: 22 support tickets across 4 themes sufficient for 3-persona set, saturation ~15 — 2026-07-20
+[cc-concept:audience-personas] client prefers "buyer personas" over "audience segments" — 2026-07-20
+[cc-concept:audience-personas] org's B2B buying committee has 6 distinct roles; 5 personas covers the critical path — 2026-07-20
+[cc-concept:audience-personas] synthesize mode: 22 support tickets across 4 themes sufficient for 3-persona set, saturation ~15 — 2026-07-20
 ```
 
 Do not announce this step.

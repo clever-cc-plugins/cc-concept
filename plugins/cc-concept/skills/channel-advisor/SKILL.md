@@ -1,5 +1,5 @@
 ---
-name: cc-concept-channel-advisor
+name: channel-advisor
 description: >
   Use this skill to recommend a channel mix and tactics for a specific marketing goal,
   audience, and budget context. Invoke when the user asks to "recommend a channel mix",
@@ -28,10 +28,10 @@ Read the `## Context files` table in `CLAUDE.md`. Match the following needs agai
 **Summary** column semantically — never against a label or filename:
 
 - **Business goals/KPIs** — campaign objectives, business targets, success metrics, growth stage, revenue targets
-- **Target audience** — positioning, audience profile, customer segments, buyer personas, organization background (prefer a `cc-concept-positioning` output file if registered)
+- **Target audience** — positioning, audience profile, customer segments, buyer personas, organization background (prefer a `positioning` output file if registered)
 
 Note silently if present (do not ask about): current marketing channels, budget, and a
-prior strategy performance review (`cc-concept-performance-review` output) if registered —
+prior strategy performance review (`strategy-performance-review` output) if registered —
 factor validated/invalidated channel bets into the recommendation.
 
 ## Step 2: Gating — Three-State Model
@@ -68,7 +68,7 @@ in the output and continue.
 Search the context table Summary column for semantic matches: target audience,
 positioning, organization background, customer segments, buyer profile.
 
-Prefer a `cc-concept-positioning` output file's Summary if one is registered; else
+Prefer a `positioning` output file's Summary if one is registered; else
 fall back to organization background.
 
 If **covered**, use silently.
@@ -145,12 +145,12 @@ Return the channel recommendation inside clear delimiters:
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:cc-concept-channel-advisor]` in `.claude/learnings.md`.
+Store learnings tagged `[cc-concept:channel-advisor]` in `.claude/learnings.md`.
 Examples:
 
 ```
-[cc-concept:cc-concept-channel-advisor] client vetoed paid social entirely, treat as excluded from all future recommendations — 2026-07-19
-[cc-concept:cc-concept-channel-advisor] client's existing email list is small (<500) and shouldn't be weighted as a primary channel yet — 2026-07-19
+[cc-concept:channel-advisor] client vetoed paid social entirely, treat as excluded from all future recommendations — 2026-07-19
+[cc-concept:channel-advisor] client's existing email list is small (<500) and shouldn't be weighted as a primary channel yet — 2026-07-19
 ```
 
 If the session revealed a channel preference, constraint, or exclusion that future runs

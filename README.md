@@ -11,27 +11,29 @@ A [Claude Code](https://claude.ai/code) plugin providing marketing-strategy skil
 
 cc-concept runs standalone — it never requires `cc-content` — but recognises and reuses context an existing `cc-content` project already provides.
 
+> **Breaking change (v1.0.0):** skill names dropped the `cc-concept-` prefix (e.g. `cc-concept-positioning` → `positioning`). Plugin skills are already namespaced by Claude Code as `cc-concept:<skill-name>`, so the prefix was redundant. A few names also changed wording to stay specific and avoid collisions with `cc-content`'s skills: `cc-concept-onboarding` → `strategy-onboarding`, `cc-concept-performance-review` → `strategy-performance-review`, `cc-concept-orchestrator` → `strategy-orchestrator`, `cc-concept-content-strategy` → `editorial-strategy`, `cc-concept-gtm` → `gtm-plan`. Update any saved `/cc-concept-...` invocations to the new names.
+
 ---
 
 ## At a glance
 
-| Skill                              | What it does                                                                                                                               |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/cc-concept-audience`             | Develops one or more audience personas or ICPs from scratch via interview or synthesis from customer data                                  |
-| `/cc-concept-competitive-research` | Runs a standalone competitive audit covering messaging, positioning, SWOT, market gaps, and content-strategy opportunities                 |
-| `/cc-concept-onboarding`           | Collects any strategic context downstream skills need but the project lacks                                                                |
-| `/cc-concept-orchestrator`         | Matches a stated business goal to an engagement type and sequences the right subset/order of cc-concept and cc-content skills to run       |
-| `/cc-concept-positioning`          | Develops product/company positioning and registers it as project context                                                                   |
-| `/cc-concept-campaign-concept`     | Builds a complete campaign concept — goals, audience, key messages, channel mix, creative brief — and hands it off as `brief.md`           |
-| `/cc-concept-channel-advisor`      | Recommends a channel mix and tactics for a goal, audience, and budget                                                                      |
-| `/cc-concept-content-strategy`     | Produces an editorial planning framework — content pillars, topic clusters, mix, cadence — and registers it as context                     |
-| `/cc-concept-seo-research`         | Builds keyword-validated topic clusters using Ubersuggest MCP tools when connected, or fallback interview-driven research                  |
-| `/cc-concept-gtm`                  | Structures a go-to-market launch plan — audience, positioning, channel sequence, messages, milestones                                      |
-| `/cc-concept-marketing-advisor`    | Open-ended strategic advisor for questions that don't fit a templated skill, with deferral to the more specific ones above                 |
-| `/cc-concept-performance-review`   | Reviews whether a positioning, channel-mix, content-strategy, GTM, or campaign bet actually played out, and recommends the next adjustment |
-| `/cc-concept-learnings-promotion`  | Reviews accumulated `.claude/learnings.md` entries and promotes recurring patterns into durable guidance                                   |
+| Skill                                     | What it does                                                                                                                               |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `/cc-concept:audience-personas`           | Develops one or more audience personas or ICPs from scratch via interview or synthesis from customer data                                  |
+| `/cc-concept:competitive-research`        | Runs a standalone competitive audit covering messaging, positioning, SWOT, market gaps, and content-strategy opportunities                 |
+| `/cc-concept:strategy-onboarding`         | Collects any strategic context downstream skills need but the project lacks                                                                |
+| `/cc-concept:strategy-orchestrator`       | Matches a stated business goal to an engagement type and sequences the right subset/order of cc-concept and cc-content skills to run       |
+| `/cc-concept:positioning`                 | Develops product/company positioning and registers it as project context                                                                   |
+| `/cc-concept:campaign-concept`            | Builds a complete campaign concept — goals, audience, key messages, channel mix, creative brief — and hands it off as `brief.md`           |
+| `/cc-concept:channel-advisor`             | Recommends a channel mix and tactics for a goal, audience, and budget                                                                      |
+| `/cc-concept:editorial-strategy`          | Produces an editorial planning framework — content pillars, topic clusters, mix, cadence — and registers it as context                     |
+| `/cc-concept:seo-research`                | Builds keyword-validated topic clusters using Ubersuggest MCP tools when connected, or fallback interview-driven research                  |
+| `/cc-concept:gtm-plan`                    | Structures a go-to-market launch plan — audience, positioning, channel sequence, messages, milestones                                      |
+| `/cc-concept:marketing-advisor`           | Open-ended strategic advisor for questions that don't fit a templated skill, with deferral to the more specific ones above                 |
+| `/cc-concept:strategy-performance-review` | Reviews whether a positioning, channel-mix, content-strategy, GTM, or campaign bet actually played out, and recommends the next adjustment |
+| `/cc-concept:learnings-promotion`         | Reviews accumulated `.claude/learnings.md` entries and promotes recurring patterns into durable guidance                                   |
 
-Skills are invoked by bare name (e.g. `/cc-concept-positioning`), never namespaced with the plugin name.
+Plugin skills are always namespaced by Claude Code, so every skill is invoked as `/cc-concept:<skill-name>` — e.g. `/cc-concept:positioning`.
 
 ---
 
@@ -73,7 +75,7 @@ To remove the marketplace as well:
 **Step 1 — Onboard (optional but recommended)**
 
 ```
-/cc-concept-onboarding
+/cc-concept:strategy-onboarding
 ```
 
 Collects business goals, target audience, and any other strategic context the skills below need — and picks up context an existing `cc-content` project already has. Every templated skill also asks for what it's missing on its own, once, the first time it needs it — onboarding just front-loads that.
@@ -81,9 +83,9 @@ Collects business goals, target audience, and any other strategic context the sk
 **Step 2 — Set the strategic frame**
 
 ```
-/cc-concept-positioning
-/cc-concept-channel-advisor
-/cc-concept-content-strategy
+/cc-concept:positioning
+/cc-concept:channel-advisor
+/cc-concept:editorial-strategy
 ```
 
 Run whichever of these apply to the work at hand. Each produces a document and registers it as project context, so later skills (including `cc-content`'s) pick it up automatically.
@@ -91,8 +93,8 @@ Run whichever of these apply to the work at hand. Each produces a document and r
 **Step 3 — Plan a campaign or launch**
 
 ```
-/cc-concept-campaign-concept
-/cc-concept-gtm
+/cc-concept:campaign-concept
+/cc-concept:gtm-plan
 ```
 
 Both produce a full plan and offer to save a `brief.md`-compatible handoff file that `cc-content` skills can consume directly.
@@ -100,7 +102,7 @@ Both produce a full plan and offer to save a `brief.md`-compatible handoff file 
 **Step 4 — Ask anything else**
 
 ```
-/cc-concept-marketing-advisor
+/cc-concept:marketing-advisor
 ```
 
 For strategic questions that don't fit a templated skill — it defers to the skill above that actually matches, when one does.
@@ -108,7 +110,7 @@ For strategic questions that don't fit a templated skill — it defers to the sk
 **Step 5 — Close the loop**
 
 ```
-/cc-concept-learnings-promotion
+/cc-concept:learnings-promotion
 ```
 
 Periodically, review the corrections and preferences the skills above have logged to `.claude/learnings.md`, and promote the recurring ones into `CLAUDE.md` so they don't need to be repeated.
@@ -138,13 +140,13 @@ Skills read all registered files and load what's relevant for each task.
 - **File** — relative to the `CLAUDE.md` that contains the table, not the repository root.
 - **Summary** — the field skills actually match against. One sentence, specific enough to act as a relevance signal.
 
-`/cc-concept-onboarding` and each templated skill's own registration step (e.g. positioning, content strategy) build and extend this table. `cc-concept-campaign-concept` and `cc-concept-gtm` also hand off an optional `brief.md` at the working-directory root — this is a one-time handoff artifact for `cc-content`, never registered in the context table.
+`/cc-concept:strategy-onboarding` and each templated skill's own registration step (e.g. positioning, content strategy) build and extend this table. `campaign-concept` and `gtm-plan` also hand off an optional `brief.md` at the working-directory root — this is a one-time handoff artifact for `cc-content`, never registered in the context table.
 
 ---
 
 ## Learnings
 
-Every cc-concept skill can log a correction or a recurring preference to `.claude/learnings.md`, tagged `[cc-concept:<skill-name>]`. Nothing modifies `CLAUDE.md` directly in the moment — `/cc-concept-learnings-promotion` reviews the accumulated entries later, groups recurring ones (3 or more similar), and proposes promoting them into `CLAUDE.md` or dismissing one-offs. It never commits on your behalf and never touches other plugins' tags.
+Every cc-concept skill can log a correction or a recurring preference to `.claude/learnings.md`, tagged `[cc-concept:<skill-name>]`. Nothing modifies `CLAUDE.md` directly in the moment — `/cc-concept:learnings-promotion` reviews the accumulated entries later, groups recurring ones (3 or more similar), and proposes promoting them into `CLAUDE.md` or dismissing one-offs. It never commits on your behalf and never touches other plugins' tags.
 
 ---
 

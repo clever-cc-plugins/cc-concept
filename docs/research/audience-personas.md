@@ -3,7 +3,7 @@
 
 ---
 
-## ChatGPT (source: `cc-concept-audience-chatgpt.md`)
+## ChatGPT (source: `audience-personas-chatgpt.md`)
 
 ## 1. JTBD-Interviewfragen (funktional, emotional, sozial)
 
@@ -105,7 +105,7 @@ Kurz: Eine falsifizierbare Persona formuliert konkrete Hypothesen, z.B. „Perso
 
 ---
 
-## Claude (source: `cc-concept-audience-claude.md`)
+## Claude (source: `audience-personas-claude.md`)
 
 # Building a Repeatable Persona/ICP Development Process: A Practitioner's Field Guide
 
@@ -331,7 +331,7 @@ Zambito, T. (n.d.). *What is a buyer persona?* Retrieved July 2026, from https:/
 
 ---
 
-## Consensus (source: `cc-concept-audience-consensus.md`)
+## Consensus (source: `audience-personas-consensus.md`)
 
 # Umfassender Leitfaden zu **JTBD**, **Personas** und **ICP**
 
@@ -488,7 +488,7 @@ Wutich, A., Beresford, M., Bernard, H., & Id, O. (2024). Sample Sizes for 10 Typ
 
 ---
 
-## DeepSeek (source: `cc-concept-audience-deepseek.md`)
+## DeepSeek (source: `audience-personas-deepseek.md`)
 
 # Persona/ICP Development Process: A Comprehensive Research Report for AI-Assisted Synthesis
 
@@ -799,7 +799,7 @@ Torres, T. (2021). _Continuous discovery habits_.在产品学院.
 
 ---
 
-## Gemini (source: `cc-concept-audience-gemini.md`)
+## Gemini (source: `audience-personas-gemini.md`)
 
 # **The Archetype Validation Framework: High-Fidelity Persona and ICP Synthesis for AI-Assisted and Qualitative Workflows**
 
@@ -1120,7 +1120,7 @@ To integrate falsifiability into a repeatable development process, a persona's c
 
 ---
 
-## Perplexity (source: `cc-concept-audience-perplexity.md`)
+## Perplexity (source: `audience-personas-perplexity.md`)
 
 ## 1. Jobs-to-be-Done Interview Question Set (Ordered, One-at-a-Time)
 

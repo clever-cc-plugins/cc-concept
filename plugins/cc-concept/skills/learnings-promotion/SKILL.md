@@ -1,12 +1,12 @@
 ---
-name: cc-concept-learnings-promotion
+name: learnings-promotion
 description: >
   Use this skill to review accumulated cc-concept learnings in .claude/learnings.md,
   group recurring patterns, and promote them into durable guidance (CLAUDE.md or a
   cc-concept reference file) or dismiss one-offs. Invoke when the user asks to
   "promote learnings", "review cc-concept learnings", "consolidate learnings", or
   "clean up learnings.md". Never triggers on session-wrap phrasing ("wrap up", "end
-  session", "session wrap", "close out this session") — that is cc-content-session-wrap's
+  session", "session wrap", "close out this session") — that is session-wrap's
   scope, not this skill's.
 allowed-tools: Read, Write, Edit
 ---
@@ -24,7 +24,7 @@ Read `.claude/learnings.md`. If the file does not exist, report "No learnings fi
 Filter to lines tagged `[cc-concept:` only — ignore every other plugin's tags entirely (e.g. `[cc-content:`, `[cc-config:` lines are invisible to this skill). Example of a matching line:
 
 ```
-[cc-concept:cc-concept-channel-advisor] client prefers email+LinkedIn as primary channels over paid social — 2026-06-01
+[cc-concept:channel-advisor] client prefers email+LinkedIn as primary channels over paid social — 2026-06-01
 ```
 
 ## Step 1: Group and threshold
@@ -74,4 +74,4 @@ Perform no git operations of any kind — no git add, no git commit, no git anyt
 
 ## Scope boundary
 
-This skill never reviews session content, never promotes deliverables (campaign concepts, positioning docs, etc. — those are registered as context by their own skills' Step 6.5), and never triggers on cc-content-session-wrap's phrasing ("wrap up", "end session", "session wrap", "close out this session"). Its only input is `.claude/learnings.md`, filtered to `[cc-concept:` tags.
+This skill never reviews session content, never promotes deliverables (campaign concepts, positioning docs, etc. — those are registered as context by their own skills' Step 6.5), and never triggers on session-wrap's phrasing ("wrap up", "end session", "session wrap", "close out this session"). Its only input is `.claude/learnings.md`, filtered to `[cc-concept:` tags.

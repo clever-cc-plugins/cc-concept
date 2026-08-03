@@ -9,7 +9,7 @@
 #
 # Every scan below is directory-guarded, so this one script self-adapts to the
 # project shape: a plugin repo's `context/` scan is a no-op, a content repo's
-# `plugins/` scan is a no-op. Do not fork it per project — /cc-config-optimize
+# `plugins/` scan is a no-op. Do not fork it per project — /auditing-config
 # compares the version marker above against the plugin's copy and offers to
 # refresh, and local forks would be flagged as drift.
 

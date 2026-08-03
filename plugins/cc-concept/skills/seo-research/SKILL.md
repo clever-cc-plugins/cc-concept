@@ -1,9 +1,9 @@
 ---
-name: cc-concept-seo-research
+name: seo-research
 description: >
   Use this skill to build keyword-validated topic clusters for content planning.
   Invoke when the user asks to "research keywords", "find SEO topics", "what should
-  we write about" backed by search demand, or when cc-concept-content-strategy is
+  we write about" backed by search demand, or when editorial-strategy is
   about to generate pillars without any keyword data loaded. Uses the Ubersuggest
   MCP tools when connected; falls back to an interview-based topic-gathering workflow
   when they are not available — never blocks on their absence.
@@ -13,9 +13,9 @@ argument-hint: "[optional: seed topic or list of seed keywords]"
 
 # SEO Research & Topic-Cluster Skill
 
-This skill builds keyword-validated topic clusters, using professional SEO tools when available and gracefully degrading to interview-driven research when they are not. Topic clusters feed `cc-concept-content-strategy`'s pillar generation with actual search-demand signals.
+This skill builds keyword-validated topic clusters, using professional SEO tools when available and gracefully degrading to interview-driven research when they are not. Topic clusters feed `editorial-strategy`'s pillar generation with actual search-demand signals.
 
-Adapts `../_shared/skill-contract.md`'s 8-step sequence. Step 1 includes MCP detection; Step 4 branches into tool-assisted or fallback workflow per the research in `docs/research/cc-concept-seo-research.md`.
+Adapts `../_shared/skill-contract.md`'s 8-step sequence. Step 1 includes MCP detection; Step 4 branches into tool-assisted or fallback workflow per the research in `docs/research/seo-research.md`.
 
 ## Step 0: Recall learnings
 
@@ -32,7 +32,7 @@ the **Summary** column semantically:
 - **Organization background** — business, market position, target offer
 - **Target audience** — personas, customer segments, positioning
 
-Note silently if present; never ask. If `cc-concept-positioning` output is registered,
+Note silently if present; never ask. If `positioning` output is registered,
 prefer its Summary over organization background.
 
 ### MCP Tool Availability Detection
@@ -53,12 +53,12 @@ system reminders if the MCP server is connected.
 > "SEO tooling isn't connected this session — continuing with interview-based topic gathering"
 
 Then proceed to the fallback workflow (Step 4b below). Do not treat this as a failure
-or block. This is the skill's designed degrade path, same as `cc-content-blog-article`'s
+or block. This is the skill's designed degrade path, same as `blog-article`'s
 fallback when brand voice is unavailable.
 
 ## Step 2: Briefing check — gated needs
 
-This skill gates on **zero required needs** (like `cc-concept-audience`). Organization background and target audience improve the output but do not block it; the skill works standalone.
+This skill gates on **zero required needs** (like `audience-personas`). Organization background and target audience improve the output but do not block it; the skill works standalone.
 
 If organization background or target audience are already loaded (Step 1), use them
 silently. If neither is present, proceed — the skill will ask one clarifying question
@@ -77,7 +77,7 @@ Ask once to establish the scope:
 
 If Ubersuggest (or other keyword tool) MCP tools are available, run this workflow.
 
-Based on `docs/research/cc-concept-seo-research.md` §1 (Tool-Assisted Workflow):
+Based on `docs/research/seo-research.md` §1 (Tool-Assisted Workflow):
 
 1. **Seed expansion:** Take the seed keyword(s) from Step 3 and use an available
    Ubersuggest-family tool (e.g., `keyword_suggestions`, `keyword_ideas`) to expand
@@ -118,7 +118,7 @@ Proceed to Step 5 with the tool-assisted cluster table.
 ## Step 4b: Generate — Fallback Workflow (No Tool)
 
 If Ubersuggest or other keyword tools are not available, run this three-track manual
-workflow. Based on `docs/research/cc-concept-seo-research.md` §3 (No-Tool Fallback Workflow):
+workflow. Based on `docs/research/seo-research.md` §3 (No-Tool Fallback Workflow):
 
 ### Track A — Competitor-Content Keyword Inference
 
@@ -240,19 +240,19 @@ Confirm the file was created, then add a row to the `## Context files` table in
 ```
 
 The Summary must explicitly name "keyword", "SEO", "topic cluster", and "search volume"
-— this wording is what makes the file legible to `cc-concept-content-strategy`'s Step 1
+— this wording is what makes the file legible to `editorial-strategy`'s Step 1
 context-loading without that skill needing an edit. It is functionally part of this
 requirement, not cosmetic.
 
 Do **not** hand-edit the **Key Config Files** table — the pre-commit hook owns that sync.
 
-Store learnings tagged `[cc-concept:cc-concept-seo-research]` in `.claude/learnings.md`.
+Store learnings tagged `[cc-concept:seo-research]` in `.claude/learnings.md`.
 Examples:
 
 ```
-[cc-concept:cc-concept-seo-research] client markets B2B SaaS; avoid consumer-marketing keywords, prioritize "how to" and "vs" informational intents — 2026-07-20
-[cc-concept:cc-concept-seo-research] Ubersuggest MCP tools available in session; keyword difficulty threshold appropriate for a mature domain (KD up to 60) — 2026-07-20
-[cc-concept:cc-concept-seo-research] interview revealed customers use "platform" more than "tool"; adjust keyword focus accordingly — 2026-07-20
+[cc-concept:seo-research] client markets B2B SaaS; avoid consumer-marketing keywords, prioritize "how to" and "vs" informational intents — 2026-07-20
+[cc-concept:seo-research] Ubersuggest MCP tools available in session; keyword difficulty threshold appropriate for a mature domain (KD up to 60) — 2026-07-20
+[cc-concept:seo-research] interview revealed customers use "platform" more than "tool"; adjust keyword focus accordingly — 2026-07-20
 ```
 
 If the session revealed a preferred seed topic, a keyword or clustering pattern, or a

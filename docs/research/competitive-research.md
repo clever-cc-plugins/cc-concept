@@ -3,7 +3,7 @@
 
 ---
 
-## ChatGPT (source: `cc-concept-competitive-research-chatgpt.md`)
+## ChatGPT (source: `competitive-research-chatgpt.md`)
 
 # 1. Wiederholbare Struktur der Wettbewerbs-Content-Analyse  
 Für jeden Mitbewerber sollte eine Checkliste abgehakt werden, die folgende Dimensionen enthält:  
@@ -72,7 +72,7 @@ Moeller, S. (2018, 10. Dezember). *How to Create a SWOT Analysis for Content Mar
 
 ---
 
-## Claude (source: `cc-concept-competitive-research-claude.md`)
+## Claude (source: `competitive-research-claude.md`)
 
 # The AI-Assisted Competitor Content Audit: A Repeatable Methodology
 
@@ -349,7 +349,7 @@ Young Urban Project. (2026). *SWOT analysis in marketing: That actually guides d
 
 ---
 
-## Consensus (source: `cc-concept-competitive-research-consensus.md`)
+## Consensus (source: `competitive-research-consensus.md`)
 
 # Leitfaden für **Competitive-Content-Audits**
 
@@ -496,7 +496,7 @@ Yusrizal, M. F., Suryani, F., & Gerhani, F. (2026). SWOT ANALYSIS OF DIGITAL MAR
 
 ---
 
-## DeepSeek (source: `cc-concept-competitive-research-deepseek.md`)
+## DeepSeek (source: `competitive-research-deepseek.md`)
 
 # Competitive-Content Audit: A Repeatable Research Framework
 
@@ -820,7 +820,7 @@ _Various LinkedIn practitioner posts_ (Agorapulse, 2026; Abasifreke Edet, 2026)
 
 ---
 
-## Gemini (source: `cc-concept-competitive-research-gemini.md`)
+## Gemini (source: `competitive-research-gemini.md`)
 
 # **Strategische Analyse von Mitbewerber-Content: Reproduzierbare Frameworks für die Marktbeherrschung**
 
@@ -1046,7 +1046,7 @@ Durch diese rigorose Fokussierung auf maximal 2 bis 4 Mitbewerber wird sicherges
 
 ---
 
-## Perplexity (source: `cc-concept-competitive-research-perplexity.md`)
+## Perplexity (source: `competitive-research-perplexity.md`)
 
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 

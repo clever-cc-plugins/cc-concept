@@ -1,5 +1,5 @@
 ---
-name: cc-concept-performance-review
+name: strategy-performance-review
 description: >
   Use this skill to review whether a strategic concept's bets actually played out —
   a positioning claim, a channel allocation, a content-strategy pillar mix, a GTM
@@ -8,7 +8,7 @@ description: >
   perform against plan", "review the channel mix results", or "strategic performance
   review". Works from whatever performance data the owner pastes in — there is no
   analytics API integration. Do NOT use it to analyze how an individual content piece
-  performed structurally or tonally — that is cc-content-performance-review's job, a
+  performed structurally or tonally — that is content-performance-review's job, a
   different plugin's skill at the content-piece altitude, not the strategy altitude.
 allowed-tools: Read, Write, Edit, Bash
 argument-hint: "[optional: path to performance notes or KPI data]"
@@ -50,7 +50,7 @@ If nothing is registered, say so and stop — there is no baseline to check perf
 against:
 
 > "I don't see any concept documents registered yet. Run one of the concept-generation
-> skills first (e.g. `/cc-concept-positioning`, `/cc-concept-channel-advisor`) before
+> skills first (e.g. `/positioning`, `/channel-advisor`) before
 > reviewing its performance."
 
 ## Step 2: Extract the bets
@@ -101,7 +101,7 @@ validated channels and one invalidated one gets four separate verdicts, not a 75
 For each Validated or Inconclusive bet, note "no change needed" or a minor refinement.
 For each Invalidated bet, recommend re-running the specific upstream skill that
 produced the document, naming the specific adjustment (e.g. "re-run
-`/cc-concept-channel-advisor` with budget shifted away from Channel X" — not a
+`/channel-advisor` with budget shifted away from Channel X" — not a
 generic "reconsider this channel").
 
 ## Step 5: Internal quality check
@@ -130,7 +130,7 @@ Recommendation: <re-run `/cc-concept-<skill>` with <specific adjustment> | no ch
 ## Register output
 
 Write the review to `context/strategy-performance-review.md` by convention. Apply the
-same collision-check logic as `cc-concept-positioning`'s Step 6:
+same collision-check logic as `positioning`'s Step 6:
 
 1. Check if `context/strategy-performance-review.md` exists.
 2. If it exists, generate a distinct filename by appending a `-N` suffix before `.md`
@@ -150,12 +150,12 @@ the **Key Config Files** table — the pre-commit hook owns that sync.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:cc-concept-performance-review]` in
+Store learnings tagged `[cc-concept:strategy-performance-review]` in
 `.claude/learnings.md`. Examples:
 
 ```
-[cc-concept:cc-concept-performance-review] client always wants channel-level data even when campaign hit overall goal — 2026-07-19
-[cc-concept:cc-concept-performance-review] positioning bets take 2+ quarters to show signal; flag short review windows as inconclusive — 2026-07-19
+[cc-concept:strategy-performance-review] client always wants channel-level data even when campaign hit overall goal — 2026-07-19
+[cc-concept:strategy-performance-review] positioning bets take 2+ quarters to show signal; flag short review windows as inconclusive — 2026-07-19
 ```
 
 If the session revealed a review-scope preference, a recurring evidence gap, or a

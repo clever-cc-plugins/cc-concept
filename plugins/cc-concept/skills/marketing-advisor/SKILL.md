@@ -1,5 +1,5 @@
 ---
-name: cc-concept-marketing-advisor
+name: marketing-advisor
 description: >
   Use this skill for open-ended strategic marketing, sales, or product-market questions
   that don't fit a templated cc-concept skill. Invoke when the user asks "help me think
@@ -29,11 +29,11 @@ This skill gates on nothing. It never asks an ask-once question and never labels
 
 Before answering, check whether the question falls squarely within a more specific skill's scope. Include this exact list:
 
-- `cc-concept-channel-advisor` — channel mix or tactics questions
-- `cc-concept-positioning` — differentiation or value-proposition questions
-- `cc-concept-campaign-concept` — full campaign planning questions
-- `cc-content-ideation` — content angle/inspiration questions (only if available in the current session's toolset)
-- `cc-content-text` — drafting a specific piece of content (only if available in the current session's toolset)
+- `channel-advisor` — channel mix or tactics questions
+- `positioning` — differentiation or value-proposition questions
+- `campaign-concept` — full campaign planning questions
+- `content-ideation` — content angle/inspiration questions (only if available in the current session's toolset)
+- `long-tail-copy` — drafting a specific piece of content (only if available in the current session's toolset)
 
 The two cc-content-* deferrals apply only if those skills are available in the current session's toolset (i.e. cc-content is installed) — never assume they exist. If a match is found, name the specific skill and suggest invoking it instead of answering inline. If the user says "answer anyway" (or similar), proceed with an inline answer regardless.
 
@@ -60,7 +60,7 @@ Internal quality check: clarity, groundedness, no fabricated specifics. Every re
 After each reply that surfaces a decision, direction, or constraint worth keeping, offer to persist it — do not wait for an explicit "end session" signal that an open-ended conversation may never reach.
 
 1. Ask: "Worth saving this? I can add it to `.claude/learnings.md` (lightweight, for future sessions to recall) or save it as a new context file (for skills to load and reference directly). Which, or neither?"
-2. If **learnings**: append to `.claude/learnings.md` tagged `[cc-concept:cc-concept-marketing-advisor]`.
+2. If **learnings**: append to `.claude/learnings.md` tagged `[cc-concept:marketing-advisor]`.
 3. If **new context file**: derive a short slug from the decision's topic (e.g. "pricing-strategy" from a pricing decision). Write to `context/advisor-<slug>.md`. **Apply collision-check logic**: if that filename already exists, append a `-N` suffix before `.md` (try `-2`, then `-3`, etc.) until a filename that does not already exist is found. Never overwrite an existing file. Confirm the file was created, then add a row to the `## Context files` table in `CLAUDE.md` with a Summary that semantically describes the saved decision.
 4. If **neither**: continue without saving.
 
@@ -69,6 +69,6 @@ This skill never edits an existing context file it did not create.
 ### Example learnings entries
 
 ```
-[cc-concept:cc-concept-marketing-advisor] client decided to deprioritize enterprise segment for the next two quarters, focus on SMB — 2026-07-19
-[cc-concept:cc-concept-marketing-advisor] client rejected a rebrand discussion as out of scope for this engagement — 2026-07-19
+[cc-concept:marketing-advisor] client decided to deprioritize enterprise segment for the next two quarters, focus on SMB — 2026-07-19
+[cc-concept:marketing-advisor] client rejected a rebrand discussion as out of scope for this engagement — 2026-07-19
 ```

@@ -15,6 +15,7 @@ strategic frame, cc-content produces the pieces that execute it.
 | `CLAUDE.md`                                                      | Project instructions, loaded every message                                                                                 |
 | `.claude/settings.json`                                          | Permissions, hooks, environment variables                                                                                  |
 | `.githooks/pre-commit`                                           | Secret scanning (gitleaks) + CLAUDE.md table sync                                                                          |
+| `.github/workflows/release.yml`                                  | TODO: add description                                                                                                      |
 | `.gitignore`                                                     | Git ignore patterns                                                                                                        |
 | `plugins/cc-concept/.claude-plugin/plugin.json`                  | Plugin manifest                                                                                                            |
 | `plugins/cc-concept/skills/audience-personas/SKILL.md`           | Skill: Develop audience personas or ICPs via interview or synthesis from customer data                                     |

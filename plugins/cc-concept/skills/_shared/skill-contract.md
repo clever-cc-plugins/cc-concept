@@ -16,7 +16,14 @@ what it gates on, what it generates, and where it writes.
    _semantic absence_ of a required content-need, never on a missing label.
 3. **Calibrate** — set depth and scope from the request and the context available.
 4. **Generate** — produce the artifact against the relevant `_shared/` reference.
-5. **Internal quality check** — self-review before showing anything.
+5. **Internal quality check** — self-review before showing anything, in two passes:
+   1. **Non-negotiables** — the skill's fixed, binary requirements (completeness of
+      required elements, required format shapes such as the Success Metrics bet
+      line, minimum counts). All must pass; fix violations and re-check before
+      moving on.
+   2. **Quality review** — softer judgment calls (framework alignment, consistency,
+      defensibility, clarity). Improve where reasonable, but these never block on
+      their own the way a non-negotiable does.
 6. **Delimited output** — return the artifact inside clear delimiters.
 7. **Two-phase feedback** — auto-store lightweight learnings (tagged
    `[cc-concept:<skill-name>]`); ask before promoting anything heavier.

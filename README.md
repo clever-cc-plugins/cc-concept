@@ -5,9 +5,7 @@
   </picture>
 </p>
 
-<img src="assets/icon.svg" align="right" width="96" height="96" alt="cc-concept icon" />
-
-# cc-concept
+# <img src="assets/icon.svg" width="40" height="40" align="top" alt="" />&nbsp;cc-concept
 
 A [Claude Code](https://claude.ai/code) plugin providing marketing-strategy skills — positioning, campaign concepting, channel strategy, content strategy, go-to-market planning, and open-ended strategic advice. cc-concept produces the strategic frame that `cc-content` skills then execute against.
 

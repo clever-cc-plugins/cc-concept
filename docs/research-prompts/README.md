@@ -9,7 +9,8 @@ general knowledge when each skill was built.
 Five skills apply a named framework from general knowledge with no dedicated
 `docs/research/` doc behind it yet, and get a prompt here. Skills that already
 have a research doc, or that are pure process/orchestration skills with no
-framework of their own, don't.
+framework of their own, don't. New skills can also start here: `brand-voice`
+gets its research prompt before the skill exists.
 
 | Skill                         | Research prompt                                | Why / why not                                                                                                                                                                                                                                   |
 | ----------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -17,6 +18,7 @@ framework of their own, don't.
 | `channel-advisor`             | [channel-advisor.md](channel-advisor.md)       | Uses RACE specifically for channel-mix decisions; scoped to that facet, doesn't duplicate campaign-concept's prompt                                                                                                                             |
 | `editorial-strategy`          | [editorial-strategy.md](editorial-strategy.md) | Uses Message House specifically for content pillars/cadence; scoped to that facet                                                                                                                                                               |
 | `gtm-plan`                    | [gtm-plan.md](gtm-plan.md)                     | Composes all three frameworks plus a launch-type taxonomy; scoped to what's GTM-specific, since the shared frameworks are covered by the other prompts and the Success Metrics table already traces to `docs/research/measurement-framework.md` |
+| `brand-voice` (planned)       | [brand-voice.md](brand-voice.md)               | New skill; research comes first, before the skill is built. Covers deriving a voice from samples and interviews, multilingual voice, and writing guidelines that LLMs can apply                                                                 |
 | `positioning`                 | [positioning.md](positioning.md)               | Uses four positioning frameworks (Obviously Awesome, Geoffrey Moore, Value Proposition Canvas, Perceptual Map) from general knowledge                                                                                                           |
 | `audience-personas`           | —                                              | Already has `docs/research/audience-personas.md`                                                                                                                                                                                                |
 | `competitive-research`        | —                                              | Already has `docs/research/competitive-research.md`                                                                                                                                                                                             |

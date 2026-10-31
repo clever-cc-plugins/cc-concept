@@ -58,6 +58,7 @@ Read the `## Context files` table in `CLAUDE.md` (if it exists). Match each row 
 - **Campaign/GTM planning** — context files labeled `campaign concept`, `brief.md`, `campaign plan`, `GTM plan`, or `go-to-market`
 - **Content strategy** — context files labeled `content strategy`, `editorial plan`, `content pillars`, or `topic clusters`
 - **SEO/keyword research** — context files labeled `SEO`, `keywords`, `topic clusters`, or `keyword research`
+- **Brand voice** — context files whose Summary describes how texts sound (brand voice guide, tone of voice, writing style); judge by the Summary, since labels vary
 
 For each artifact you find, note its Summary column (the one-line description) — that's what you'll cite in Step 6 when marking it "skip".
 
@@ -66,6 +67,8 @@ For each artifact you find, note its Summary column (the one-line description) �
 ## Step 3: Determine required value-chain stages
 
 Using the engagement type from Step 1, consult `docs/research/strategy-orchestrator.md` § _Stage-by-Stage Necessity Matrix_ (the table listing engagement types and which stages are Y/O/N). Identify which stages are **Y** (required) and **O** (optional but often valuable).
+
+Brand voice is not a stage in that matrix. Add it yourself: it is **required** whenever content production is required, and it comes after positioning and before the first `cc-content` drafting skill, because every drafting skill loads the voice guide.
 
 ---
 
@@ -81,6 +84,7 @@ For each **required** or **optional** stage, map it to the skill(s) that produce
 | **Campaign/GTM planning**     | `/cc-concept:gtm-plan` (for product launch, market expansion, brand reposition) or `/cc-concept:campaign-concept` (for campaign push) | GTM produces a phased launch plan; campaign-concept produces a brief for cc-content             |
 | **Content strategy**          | `/cc-concept:editorial-strategy`                                                                                                      | Produces editorial framework (pillars, topics, cadence); gates all cc-content creation skills   |
 | **SEO/keyword research**      | `/cc-concept:seo-research`                                                                                                            | Optional but often feeds content strategy; produces validated topic clusters                    |
+| **Brand voice**               | `/cc-content:brand-voice`                                                                                                             | Builds or refines the voice guide every drafting skill loads; reuses positioning and personas   |
 | **Content production**        | `/cc-content:linkedin-post`, `/cc-content:blog-article`, `/cc-content:long-tail-copy`, etc.                                           | Format-specific drafting skills; routed through `/cc-content:atomize` if multiple formats       |
 | **Distribution**              | `/cc-content:atomize` (if multiple formats) or format-specific skills                                                                 | Multi-format repurposing; keeps claims consistent across channels                               |
 | **Measurement**               | `/cc-concept:strategy-performance-review` or `/cc-content:content-performance-review`                                                 | Strategic review (concept bets) vs. content-piece review (structural variants)                  |
@@ -96,6 +100,7 @@ For each required stage, check whether an artifact from Step 2 passes the skip t
 - **Positioning:** Skip if a positioning statement exists, was validated with customers (not just approved internally), and sales actually use its language.
 - **Content strategy:** Skip if a documented content plan exists and the content needs still fit it; redo if the plan is outdated or pillar mix has drifted.
 - **SEO/keyword research:** Skip if keyword-validated topic clusters already exist and are recent; consider a refresh if the market is shifting.
+- **Brand voice:** Skip if a voice guide is registered for the language and text types the plan needs. For a brand repositioning, or when the positioning was just changed, recommend refining the existing guide instead of skipping it.
 
 ---
 

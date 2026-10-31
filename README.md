@@ -90,7 +90,7 @@ Collects business goals, target audience, and any other strategic context the sk
 
 Run whichever of these apply to the work at hand. Each produces a document and registers it as project context, so later skills (including `cc-content`'s) pick it up automatically.
 
-Once positioning is set, build the brand voice guide with `/cc-content:brand-voice` (part of the `cc-content` plugin). It turns positioning, values, and personas into writing rules that every `cc-content` drafting skill follows. Voice is the bridge from strategy to content, so it lives with the skills that use it.
+If your plan includes content production, build the brand voice guide with `/cc-content:brand-voice` once positioning is set. The skill is part of the [`cc-content`](https://github.com/clever-cc-plugins/cc-content) plugin, which must be installed. It turns positioning, values, and personas into writing rules that the `cc-content` drafting skills load. Voice is the bridge from strategy to content, so it lives with the skills that use it.
 
 **Step 3 — Plan a campaign or launch**
 

@@ -68,7 +68,7 @@ For each artifact you find, note its Summary column (the one-line description) �
 
 Using the engagement type from Step 1, consult `docs/research/strategy-orchestrator.md` § _Stage-by-Stage Necessity Matrix_ (the table listing engagement types and which stages are Y/O/N). Identify which stages are **Y** (required) and **O** (optional but often valuable).
 
-Brand voice is not a stage in that matrix. Add it yourself: it is **required** whenever content production is required, and it comes after positioning and before the first `cc-content` drafting skill, because every drafting skill loads the voice guide.
+Brand voice is not a stage in that matrix. Add it yourself: it is **required** whenever content production is required, and it comes after positioning, after editorial strategy and SEO research when the plan includes them, and before the first `cc-content` drafting skill, because every drafting skill loads the voice guide.
 
 ---
 
@@ -112,7 +112,9 @@ Output a delimited block (using triple backticks or a clear visual boundary) con
 2. **Why** (one-line rationale tied to the engagement type)
 3. **Skip marker if applicable** (e.g., "SKIP — audience-personas.md already registered and <6 months old; sales confirms current usage")
 
-If a required stage is missing and no skip test passed, name the skill unconditionally. Example:
+If a required stage is missing and no skip test passed, name the skill unconditionally. `/cc-content:` skills need the `cc-content` plugin: if it is not installed (no `cc-content:` skills are available to you), keep them in the plan and add one line after it saying they require `cc-content`, installed with `/plugin install cc-content@clever-cc-plugins`.
+
+Example:
 
 ```
 Engagement type: Product launch
@@ -130,13 +132,15 @@ Goal: Launch a new software product to SMBs
 
 6. /cc-concept:seo-research — Optional for launch: keyword research will validate pillar topics and improve organic discoverability post-launch. (Recommended but not required.)
 
-7. /cc-content:linkedin-post — Required for new product: create launch-announcement posts for SMB audience and early adopters on LinkedIn.
+7. /cc-content:brand-voice — Required before drafting: build the voice guide from the new positioning and personas, so every launch piece sounds the same. (Not skipped: no voice guide on file.)
 
-8. /cc-content:blog-article — Required for new product: write thought leadership pieces explaining the product category and why SMBs should care.
+8. /cc-content:linkedin-post — Required for new product: create launch-announcement posts for SMB audience and early adopters on LinkedIn.
 
-9. /cc-content:atomize — Recommended: if you want to repurpose launch messaging across multiple channels (LinkedIn, email, blog) while keeping claims identical.
+9. /cc-content:blog-article — Required for new product: write thought leadership pieces explaining the product category and why SMBs should care.
 
-10. /cc-concept:strategy-performance-review — Recommended post-launch: once launch is live and first results are in, review whether GTM milestones held and positioning messaging resonated.
+10. /cc-content:atomize — Recommended: if you want to repurpose launch messaging across multiple channels (LinkedIn, email, blog) while keeping claims identical.
+
+11. /cc-concept:strategy-performance-review — Recommended post-launch: once launch is live and first results are in, review whether GTM milestones held and positioning messaging resonated.
 ```
 
 ---

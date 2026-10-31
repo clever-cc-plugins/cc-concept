@@ -19,16 +19,16 @@ cc-concept runs standalone — it never requires `cc-content` — but recognises
 
 | Skill                                     | What it does                                                                                                                               |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/cc-concept:audience-personas`           | Develops one or more audience personas or ICPs from scratch via interview or synthesis from customer data                                  |
-| `/cc-concept:competitive-research`        | Runs a standalone competitive audit covering messaging, positioning, SWOT, market gaps, and content-strategy opportunities                 |
 | `/cc-concept:strategy-onboarding`         | Collects any strategic context downstream skills need but the project lacks                                                                |
-| `/cc-concept:strategy-orchestrator`       | Matches a stated business goal to an engagement type and sequences the right subset/order of cc-concept and cc-content skills to run       |
+| `/cc-concept:audience-personas`           | Develops one or more audience personas or ICPs from scratch via interview or synthesis from customer data                                  |
 | `/cc-concept:positioning`                 | Develops product/company positioning and registers it as project context                                                                   |
+| `/cc-concept:competitive-research`        | Runs a standalone competitive audit covering messaging, positioning, SWOT, market gaps, and content-strategy opportunities                 |
+| `/cc-concept:seo-research`                | Builds keyword-validated topic clusters using Ubersuggest MCP tools when connected, or fallback interview-driven research                  |
 | `/cc-concept:campaign-concept`            | Builds a complete campaign concept — goals, audience, key messages, channel mix, creative brief — and hands it off as `brief.md`           |
 | `/cc-concept:channel-advisor`             | Recommends a channel mix and tactics for a goal, audience, and budget                                                                      |
 | `/cc-concept:editorial-strategy`          | Produces an editorial planning framework — content pillars, topic clusters, mix, cadence — and registers it as context                     |
-| `/cc-concept:seo-research`                | Builds keyword-validated topic clusters using Ubersuggest MCP tools when connected, or fallback interview-driven research                  |
 | `/cc-concept:gtm-plan`                    | Structures a go-to-market launch plan — audience, positioning, channel sequence, messages, milestones                                      |
+| `/cc-concept:strategy-orchestrator`       | Matches a stated business goal to an engagement type and sequences the right subset/order of cc-concept and cc-content skills to run       |
 | `/cc-concept:marketing-advisor`           | Open-ended strategic advisor for questions that don't fit a templated skill, with deferral to the more specific ones above                 |
 | `/cc-concept:strategy-performance-review` | Reviews whether a positioning, channel-mix, content-strategy, GTM, or campaign bet actually played out, and recommends the next adjustment |
 | `/cc-concept:learnings-promotion`         | Reviews accumulated `.claude/learnings.md` entries and promotes recurring patterns into durable guidance                                   |

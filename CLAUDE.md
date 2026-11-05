@@ -11,13 +11,12 @@ strategic frame, cc-content produces the pieces that execute it.
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | `.claude/format-markdown.sh`                                     | PostToolUse hook: formats Markdown files with prettier after edits                                                         |
 | `.claude/guard-secret-files.sh`                                  | PreToolUse hook: blocks reads/edits/writes of secret .env files                                                            |
-| `.claudeignore`                                                  | Paths excluded from Claude Code indexing                                                                                   |
 | `CLAUDE.md`                                                      | Project instructions, loaded every message                                                                                 |
 | `.claude/settings.json`                                          | Permissions, hooks, environment variables                                                                                  |
 | `.githooks/pre-commit`                                           | Secret scanning (gitleaks) + CLAUDE.md table sync                                                                          |
-| `.github/workflows/claude-code-review.yml`                       | TODO: add description                                                                                                      |
-| `.github/workflows/claude.yml`                                   | TODO: add description                                                                                                      |
-| `.github/workflows/release.yml`                                  | TODO: add description                                                                                                      |
+| `.github/workflows/claude-code-review.yml`                       | Runs Claude code review on pull requests                                                                                   |
+| `.github/workflows/claude.yml`                                   | Responds to `@claude` mentions in issues and PRs                                                                           |
+| `.github/workflows/release.yml`                                  | Calls the shared plugin-release workflow on push to main                                                                   |
 | `.gitignore`                                                     | Git ignore patterns                                                                                                        |
 | `plugins/cc-concept/.claude-plugin/plugin.json`                  | Plugin manifest                                                                                                            |
 | `plugins/cc-concept/skills/audience-personas/SKILL.md`           | Skill: Develop audience personas or ICPs via interview or synthesis from customer data                                     |
@@ -37,7 +36,9 @@ strategic frame, cc-content produces the pieces that execute it.
 
 ## Context files
 
-Project-scope context files registered by cc-concept and cc-content skills. Register new context files by running `/register-context` or by adding them manually to this table.
+<!-- cc-config: context-toc-registered -->
+
+Files the cc-concept and cc-content skills create in consumer projects (this plugin repo has no `context/` directory of its own). Register new context files by running `/register-context` or by adding them manually to this table.
 
 | Label                     | Path                                  | Summary                                                                                 |
 | ------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -67,4 +68,10 @@ Install from the clever-cc-plugins marketplace:
 ## Learnings
 
 When the user corrects a mistake or points out a recurring issue, append a one-line
-summary to `.claude/learnings.md`. Don't modify CLAUDE.md directly.
+summary to `.claude/learnings.md`.
+
+## Compaction
+
+When compacting, preserve the list of modified files, test status, and open TODOs.
+
+<!-- cc-config: last-optimize-run: 2026-11-05 ff2c9886daa77ca54c34d09e6b2997f6e046d41c -->

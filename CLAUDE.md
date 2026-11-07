@@ -11,13 +11,13 @@ strategic frame, cc-content produces the pieces that execute it.
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | `.claude/format-markdown.sh`                                     | PostToolUse hook: formats Markdown files with prettier after edits                                                         |
 | `.claude/guard-secret-files.sh`                                  | PreToolUse hook: blocks reads/edits/writes of secret .env files                                                            |
-| `CLAUDE.md`                                                      | Project instructions, loaded every message                                                                                 |
 | `.claude/settings.json`                                          | Permissions, hooks, environment variables                                                                                  |
 | `.githooks/pre-commit`                                           | Secret scanning (gitleaks) + CLAUDE.md table sync                                                                          |
 | `.github/workflows/claude-code-review.yml`                       | Runs Claude code review on pull requests                                                                                   |
 | `.github/workflows/claude.yml`                                   | Responds to `@claude` mentions in issues and PRs                                                                           |
 | `.github/workflows/release.yml`                                  | Calls the shared plugin-release workflow on push to main                                                                   |
 | `.gitignore`                                                     | Git ignore patterns                                                                                                        |
+| `CLAUDE.md`                                                      | Project instructions, loaded every message                                                                                 |
 | `plugins/cc-concept/.claude-plugin/plugin.json`                  | Plugin manifest                                                                                                            |
 | `plugins/cc-concept/skills/audience-personas/SKILL.md`           | Skill: Develop audience personas or ICPs via interview or synthesis from customer data                                     |
 | `plugins/cc-concept/skills/campaign-concept/SKILL.md`            | Skill: Build a campaign concept with upfront success metrics and hand it off to cc-content as brief.md                     |

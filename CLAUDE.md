@@ -25,7 +25,7 @@ strategic frame, cc-content produces the pieces that execute it.
 | `plugins/cc-concept/skills/competitive-research/SKILL.md`        | Skill: Run a standalone competitive audit covering messaging, positioning, SWOT, and market gaps                           |
 | `plugins/cc-concept/skills/editorial-strategy/SKILL.md`          | Skill: Produce a content strategy (pillars, topic clusters, mix, cadence) and register it as context                       |
 | `plugins/cc-concept/skills/gtm-plan/SKILL.md`                    | Skill: Structure a go-to-market launch plan with upfront success metrics and an optional brief.md by-product               |
-| `plugins/cc-concept/skills/learnings-promotion/SKILL.md`         | Skill: Review .claude/learnings.md, promote recurring cc-concept patterns or dismiss one-offs                              |
+| `plugins/cc-concept/skills/learnings-promotion/SKILL.md`         | Skill: Review .claude/learnings.md, promote, keep or retire cc-concept entries by source and relevance                     |
 | `plugins/cc-concept/skills/marketing-advisor/SKILL.md`           | Skill: Open-ended strategic advisor with cross-skill deferral and per-turn save-prompt                                     |
 | `plugins/cc-concept/skills/positioning/SKILL.md`                 | Positioning skill: generates brand positioning from a selected framework; delegates to competitive-research if needed      |
 | `plugins/cc-concept/skills/seo-research/SKILL.md`                | Skill: Build keyword-validated topic clusters using Ubersuggest MCP tools or fallback interview-based research             |

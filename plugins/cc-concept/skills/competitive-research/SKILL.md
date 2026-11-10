@@ -24,9 +24,7 @@ below add only competitive-research-specific behavior.
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, prior competitor selections, frameworks tried, or market-specific
-constraints. Do not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to prior competitor selections, frameworks tried, or market-specific constraints.
 
 ## Step 1: Load context and identify competitors
 
@@ -215,12 +213,11 @@ hand-edit the **Key Config Files** table; the pre-commit hook owns that sync.
 
 ## Step 8: Feedback
 
-Store learnings tagged `[cc-concept:competitive-research]` in
-`.claude/learnings.md`. Examples:
+Store learnings per the contract's Step 7, tagged `[cc-concept:competitive-research]`. Examples:
 
 ```
-[cc-concept:competitive-research] "share-of-voice" confuses clients; prefer "search visibility" — 2026-07-20
-[cc-concept:competitive-research] industry leads with 5 key vendors, not 2-4; scope as broad audit when user lists >4 — 2026-07-20
+[cc-concept:competitive-research] "share-of-voice" confuses clients; prefer "search visibility" (corrected) — 2026-07-20
+[cc-concept:competitive-research] industry leads with 5 key vendors, not 2-4; scope as broad audit when user lists >4 (inferred) — 2026-07-20
 ```
 
 If the session revealed a preferred competitor set, market dynamics, or a framework

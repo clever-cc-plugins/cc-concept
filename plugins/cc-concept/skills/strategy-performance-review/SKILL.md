@@ -31,9 +31,7 @@ the same shape before any performance data is compared against them.
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, prior review scope choices or promotion-target preferences. Do not
-announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to prior review scope choices or promotion-target preferences.
 
 ## Step 1: Load context and identify scope
 
@@ -150,12 +148,11 @@ the **Key Config Files** table — the pre-commit hook owns that sync.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:strategy-performance-review]` in
-`.claude/learnings.md`. Examples:
+Store learnings per the contract's Step 7, tagged `[cc-concept:strategy-performance-review]`. Examples:
 
 ```
-[cc-concept:strategy-performance-review] client always wants channel-level data even when campaign hit overall goal — 2026-07-19
-[cc-concept:strategy-performance-review] positioning bets take 2+ quarters to show signal; flag short review windows as inconclusive — 2026-07-19
+[cc-concept:strategy-performance-review] client always wants channel-level data even when campaign hit overall goal (stated) — 2026-07-19
+[cc-concept:strategy-performance-review] positioning bets take 2+ quarters to show signal; flag short review windows as inconclusive (inferred) — 2026-07-19
 ```
 
 If the session revealed a review-scope preference, a recurring evidence gap, or a

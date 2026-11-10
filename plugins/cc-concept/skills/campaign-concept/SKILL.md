@@ -21,9 +21,7 @@ below add only campaign-concept-specific behavior.
 
 ## Step 0–1: Recall learnings and load context
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, campaign-type preferences, rejected frameworks, or discovered strategy
-constraints. Do not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to campaign-type preferences, rejected frameworks, or discovered strategy constraints.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against
 the **Summary** column semantically — never against a label or filename:
@@ -220,12 +218,12 @@ a handoff artifact, not persistent context.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:campaign-concept]` in `.claude/learnings.md`.
+Store learnings per the contract's Step 7, tagged `[cc-concept:campaign-concept]`.
 Examples:
 
 ```
-[cc-concept:campaign-concept] client rejected the inferred "lead-generation" type for a customer-only campaign; retention fits their base better — 2026-07-18
-[cc-concept:campaign-concept] client prefers email + LinkedIn as primary channels, treats paid social as a last resort — 2026-07-18
+[cc-concept:campaign-concept] client rejected the inferred "lead-generation" type for a customer-only campaign; retention fits their base better (corrected) — 2026-07-18
+[cc-concept:campaign-concept] client prefers email + LinkedIn as primary channels, treats paid social as a last resort (stated) — 2026-07-18
 ```
 
 If the session revealed a campaign-type preference, framework override, or project

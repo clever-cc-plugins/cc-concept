@@ -25,7 +25,7 @@ strategic frame, cc-content produces the pieces that execute it.
 | `plugins/cc-concept/skills/competitive-research/SKILL.md`        | Skill: Run a standalone competitive audit covering messaging, positioning, SWOT, and market gaps                           |
 | `plugins/cc-concept/skills/editorial-strategy/SKILL.md`          | Skill: Produce a content strategy (pillars, topic clusters, mix, cadence) and register it as context                       |
 | `plugins/cc-concept/skills/gtm-plan/SKILL.md`                    | Skill: Structure a go-to-market launch plan with upfront success metrics and an optional brief.md by-product               |
-| `plugins/cc-concept/skills/learnings-promotion/SKILL.md`         | Skill: Review .claude/learnings.md, promote recurring cc-concept patterns or dismiss one-offs                              |
+| `plugins/cc-concept/skills/learnings-promotion/SKILL.md`         | Skill: Review .claude/learnings.md, promote, keep or retire cc-concept entries by source and relevance                     |
 | `plugins/cc-concept/skills/marketing-advisor/SKILL.md`           | Skill: Open-ended strategic advisor with cross-skill deferral and per-turn save-prompt                                     |
 | `plugins/cc-concept/skills/positioning/SKILL.md`                 | Positioning skill: generates brand positioning from a selected framework; delegates to competitive-research if needed      |
 | `plugins/cc-concept/skills/seo-research/SKILL.md`                | Skill: Build keyword-validated topic clusters using Ubersuggest MCP tools or fallback interview-based research             |
@@ -63,12 +63,12 @@ Install from the clever-cc-plugins marketplace:
 
 - Don't commit secrets or credentials to git
 - Don't use `--force` flags — fix the underlying issue instead
-- Don't modify CLAUDE.md directly when logging a correction — append to `.claude/learnings.md`
+- Don't modify CLAUDE.md directly when logging a correction — record it in `.claude/learnings.md`
 
 ## Learnings
 
-When the user corrects a mistake or points out a recurring issue, append a one-line
-summary to `.claude/learnings.md`.
+When the user corrects a mistake or points out a recurring issue, record a one-line
+summary in `.claude/learnings.md` by `plugins/cc-concept/skills/_shared/learnings-protocol.md`: add a source marker, and replace a contradicted entry instead of appending a second one.
 
 ## Compaction
 

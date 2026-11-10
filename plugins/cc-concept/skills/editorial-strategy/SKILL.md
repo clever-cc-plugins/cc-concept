@@ -18,9 +18,7 @@ This skill follows the shared step sequence in `../_shared/skill-contract.md`. S
 
 ## Step 0–1: Recall learnings and load context
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, content strategy preferences, rejected frameworks, or discovered constraints.
-Do not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to content strategy preferences, rejected frameworks, or discovered constraints.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against
 the **Summary** column semantically — never against a label or filename:
@@ -138,11 +136,11 @@ Do **not** hand-edit the **Key Config Files** table — the pre-commit hook owns
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:editorial-strategy]` in `.claude/learnings.md`. Examples:
+Store learnings per the contract's Step 7, tagged `[cc-concept:editorial-strategy]`. Examples:
 
 ```
-[cc-concept:editorial-strategy] client prefers thought-leadership pillars over product-led pillars, positions as an industry voice — 2026-07-19
-[cc-concept:editorial-strategy] client publishes weekly on LinkedIn but only monthly long-form; cadence recommendations should respect that split — 2026-07-19
+[cc-concept:editorial-strategy] client prefers thought-leadership pillars over product-led pillars, positions as an industry voice (stated) — 2026-07-19
+[cc-concept:editorial-strategy] client publishes weekly on LinkedIn but only monthly long-form; cadence recommendations should respect that split (stated) — 2026-07-19
 ```
 
 If the session revealed a content-strategy preference, framework override, or project constraint that future runs should apply, record it now.

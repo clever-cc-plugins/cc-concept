@@ -25,8 +25,7 @@ in a known mission/offer beats personas built in isolation.
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently, all plugin tags. Apply relevant
-entries (e.g., a prior run's preferred persona count or template). Never announce.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to a prior run's preferred persona count or template.
 
 ## Step 1: Load context and choose a mode
 
@@ -200,14 +199,12 @@ per persona.]
 The Summary keyword set (ICP, personas, audience, segmentation, jobs, decision) must
 match what other skills' existing "target audience" gates already search for semantically.
 
-**Store learnings** tagged `[cc-concept:audience-personas]` in `.claude/learnings.md`:
+Store learnings per the contract's Step 7, tagged `[cc-concept:audience-personas]`.
 
 Examples:
 
 ```
-[cc-concept:audience-personas] client prefers "buyer personas" over "audience segments" — 2026-07-20
-[cc-concept:audience-personas] org's B2B buying committee has 6 distinct roles; 5 personas covers the critical path — 2026-07-20
-[cc-concept:audience-personas] synthesize mode: 22 support tickets across 4 themes sufficient for 3-persona set, saturation ~15 — 2026-07-20
+[cc-concept:audience-personas] client prefers "buyer personas" over "audience segments" (stated) — 2026-07-20
+[cc-concept:audience-personas] org's B2B buying committee has 6 distinct roles; 5 personas covers the critical path (inferred) — 2026-07-20
+[cc-concept:audience-personas] synthesize mode: 22 support tickets across 4 themes sufficient for 3-persona set, saturation ~15 (inferred) — 2026-07-20
 ```
-
-Do not announce this step.

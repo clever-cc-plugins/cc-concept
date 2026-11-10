@@ -31,7 +31,7 @@ A [Claude Code](https://claude.ai/code) plugin with marketing-strategy skills fo
 | `/cc-concept:strategy-orchestrator`       | Matches a stated business goal to an engagement type and sequences the right `cc-concept` and `cc-content` skills, in the right order  |
 | `/cc-concept:marketing-advisor`           | Gives open-ended strategic advice for questions that don't fit a templated skill, and defers to the more specific skills above         |
 | `/cc-concept:strategy-performance-review` | Reviews whether a positioning, channel-mix, content-strategy, GTM, or campaign bet played out, and recommends the next adjustment      |
-| `/cc-concept:learnings-promotion`         | Reviews accumulated `.claude/learnings.md` entries and promotes recurring patterns into durable guidance                               |
+| `/cc-concept:learnings-promotion`         | Reviews accumulated `.claude/learnings.md` entries and promotes, keeps or retires entries by source and relevance                      |
 
 Claude Code namespaces every plugin skill, so you invoke each one as `/cc-concept:<skill-name>`, for example `/cc-concept:positioning`.
 
@@ -117,7 +117,7 @@ Use it for strategic questions that don't fit a templated skill. When a more spe
 /cc-concept:learnings-promotion
 ```
 
-Every so often, review the corrections and preferences that the skills above logged to `.claude/learnings.md`, and promote the recurring ones into `CLAUDE.md` so you don't have to repeat them.
+Every so often, review the corrections and preferences that the skills above logged to `.claude/learnings.md`, and promote, keep or retire entries by source and relevance, so you don't have to repeat standing rules.
 
 ---
 
@@ -150,7 +150,7 @@ Skills read all registered files and load what's relevant for each task.
 
 ## Learnings
 
-Every `cc-concept` skill can log a correction or a recurring preference to `.claude/learnings.md`, tagged `[cc-concept:<skill-name>]`. Nothing modifies `CLAUDE.md` directly in the moment. Later, `/cc-concept:learnings-promotion` reviews the accumulated entries, groups the recurring ones (three or more similar entries), and proposes either promoting them into `CLAUDE.md` or dismissing them as one-offs. It never commits on your behalf and never touches the tags of other plugins.
+Every `cc-concept` skill can log a correction or a recurring preference to `.claude/learnings.md`, tagged `[cc-concept:<skill-name>]`. Nothing modifies `CLAUDE.md` directly in the moment. Later, `/cc-concept:learnings-promotion` reviews the accumulated entries, groups related entries, and proposes for each to promote it into `CLAUDE.md` or a context file, keep it or retire it, judging by source and relevance rather than a count. It never commits on your behalf and never touches the tags of other plugins.
 
 ---
 

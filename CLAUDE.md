@@ -63,12 +63,12 @@ Install from the clever-cc-plugins marketplace:
 
 - Don't commit secrets or credentials to git
 - Don't use `--force` flags — fix the underlying issue instead
-- Don't modify CLAUDE.md directly when logging a correction — append to `.claude/learnings.md`
+- Don't modify CLAUDE.md directly when logging a correction — record it in `.claude/learnings.md`
 
 ## Learnings
 
-When the user corrects a mistake or points out a recurring issue, append a one-line
-summary to `.claude/learnings.md`.
+When the user corrects a mistake or points out a recurring issue, record a one-line
+summary in `.claude/learnings.md` by `plugins/cc-concept/skills/_shared/learnings-protocol.md`: add a source marker, and replace a contradicted entry instead of appending a second one.
 
 ## Compaction
 

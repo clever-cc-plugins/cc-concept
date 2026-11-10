@@ -24,7 +24,7 @@ add only onboarding-specific behavior. (Steps 5 and 6 from the contract are omit
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, path preferences, rejected interview answers, or project constraints discovered in prior runs.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to path preferences, rejected interview answers, or project constraints discovered in prior runs.
 
 ## Step 1: Discover existing context
 

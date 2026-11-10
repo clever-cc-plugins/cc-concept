@@ -19,7 +19,7 @@ Adapts `../_shared/skill-contract.md`'s 8-step sequence. Step 1 includes MCP det
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, preferred seed topics, rejected frameworks, or discovered keyword patterns.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to preferred seed topics, rejected frameworks, or discovered keyword patterns.
 
 ## Step 1: Load context and detect SEO tooling
 

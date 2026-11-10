@@ -24,7 +24,7 @@ below add only competitive-research-specific behavior.
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, prior competitor selections, frameworks tried, or market-specific constraints.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to prior competitor selections, frameworks tried, or market-specific constraints.
 
 ## Step 1: Load context and identify competitors
 

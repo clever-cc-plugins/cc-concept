@@ -18,7 +18,7 @@ This skill follows the shared step sequence in `../_shared/skill-contract.md`. S
 
 ## Step 0–1: Recall learnings and load context
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, content strategy preferences, rejected frameworks, or discovered constraints.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to content strategy preferences, rejected frameworks, or discovered constraints.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against
 the **Summary** column semantically — never against a label or filename:

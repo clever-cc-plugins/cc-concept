@@ -22,7 +22,7 @@ below add only positioning-specific behavior.
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, positioning preferences, rejected frameworks, or discovered constraints.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to positioning preferences, rejected frameworks, or discovered constraints.
 
 ## Step 1: Load context
 

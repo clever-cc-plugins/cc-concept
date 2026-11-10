@@ -20,7 +20,7 @@ only GTM-specific behavior.
 
 ## Step 0–1: Recall learnings and load context
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, launch-type preferences, rejected frameworks, or discovered strategy constraints.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to launch-type preferences, rejected frameworks, or discovered strategy constraints.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against the
 **Summary** column semantically — never against a label or filename:

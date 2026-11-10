@@ -23,7 +23,7 @@ This skill matches a stated business goal to one of six engagement types, audits
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, prior engagement-type preferences, market-specific overrides, or goal clarifications.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to prior engagement-type preferences, market-specific overrides, or goal clarifications.
 
 ---
 

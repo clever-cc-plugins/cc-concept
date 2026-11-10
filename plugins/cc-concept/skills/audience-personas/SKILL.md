@@ -25,7 +25,7 @@ in a known mission/offer beats personas built in isolation.
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, a prior run's preferred persona count or template.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to a prior run's preferred persona count or template.
 
 ## Step 1: Load context and choose a mode
 
@@ -199,7 +199,7 @@ per persona.]
 The Summary keyword set (ICP, personas, audience, segmentation, jobs, decision) must
 match what other skills' existing "target audience" gates already search for semantically.
 
-Store learnings per the contract's Step 7, tagged `[cc-concept:audience-personas]`:
+Store learnings per the contract's Step 7, tagged `[cc-concept:audience-personas]`.
 
 Examples:
 

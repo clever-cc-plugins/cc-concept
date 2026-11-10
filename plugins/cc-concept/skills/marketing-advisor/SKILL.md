@@ -60,7 +60,7 @@ Internal quality check: clarity, groundedness, no fabricated specifics. Every re
 After each reply that surfaces a decision, direction, or constraint worth keeping, offer to persist it — do not wait for an explicit "end session" signal that an open-ended conversation may never reach.
 
 1. Ask: "Worth saving this? I can add it to `.claude/learnings.md` (lightweight, for future sessions to recall) or save it as a new context file (for skills to load and reference directly). Which, or neither?"
-2. If **learnings**: record it per the protocol's **Writing** section (`../_shared/learnings-protocol.md`), tagged `[cc-concept:marketing-advisor]` with source `stated` (the user chose to save it), then follow its **Confirming** section.
+2. If **learnings**: record it per the protocol's **Writing** section (`../_shared/learnings-protocol.md`), tagged `[cc-concept:marketing-advisor]` with source `stated` when the user's own words carry the content, or `inferred` when you proposed it and the user only agreed to save it (agreeing to save is not stating a rule), then follow its **Confirming** section.
 3. If **new context file**: derive a short slug from the decision's topic (e.g. "pricing-strategy" from a pricing decision). Write to `context/advisor-<slug>.md`. **Apply collision-check logic**: if that filename already exists, append a `-N` suffix before `.md` (try `-2`, then `-3`, etc.) until a filename that does not already exist is found. Never overwrite an existing file. Confirm the file was created, then add a row to the `## Context files` table in `CLAUDE.md` with a Summary that semantically describes the saved decision.
 4. If **neither**: continue without saving.
 

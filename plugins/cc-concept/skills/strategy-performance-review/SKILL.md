@@ -31,7 +31,7 @@ the same shape before any performance data is compared against them.
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, prior review scope choices or promotion-target preferences.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to prior review scope choices or promotion-target preferences.
 
 ## Step 1: Load context and identify scope
 

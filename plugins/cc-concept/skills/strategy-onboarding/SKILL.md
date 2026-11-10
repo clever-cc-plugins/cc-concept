@@ -140,8 +140,7 @@ match the ones in Step 2 so future coverage checks will find it. Do **not** hand
 
 ## Step 7: Feedback
 
-Store learnings per the contract's Step 7, tagged `[cc-concept:strategy-onboarding]`. For
-example:
+Store learnings per the contract's Step 7, tagged `[cc-concept:strategy-onboarding]`. For example:
 
 ```
 [cc-concept:strategy-onboarding] client prefers "go-to-market plan" over "GTM strategy" (stated) — 2026-07-17

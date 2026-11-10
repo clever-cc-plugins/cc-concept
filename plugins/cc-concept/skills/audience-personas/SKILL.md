@@ -208,5 +208,3 @@ Examples:
 [cc-concept:audience-personas] org's B2B buying committee has 6 distinct roles; 5 personas covers the critical path (inferred) — 2026-07-20
 [cc-concept:audience-personas] synthesize mode: 22 support tickets across 4 themes sufficient for 3-persona set, saturation ~15 (inferred) — 2026-07-20
 ```
-
-Do not announce this step.

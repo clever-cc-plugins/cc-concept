@@ -1,11 +1,12 @@
 ---
 name: learnings-promotion
 description: >
-  Use this skill to review accumulated cc-concept learnings in .claude/learnings.md,
-  group related entries, and promote them into durable guidance (CLAUDE.md, a
-  registered context file or a cc-concept reference file), keep them or retire them.
-  Invoke when the user asks to "promote learnings", "review cc-concept learnings", "consolidate learnings", or
-  "clean up learnings.md". Never triggers on session-wrap phrasing ("wrap up", "end
+  Use this skill to review accumulated cc-concept learnings in
+  .claude/learnings.md, group related entries, and promote them into durable
+  guidance (CLAUDE.md, a registered context file or a cc-concept reference file),
+  keep them or retire them. Invoke when the user asks to "promote learnings",
+  "review cc-concept learnings", "consolidate learnings", or "clean up
+  learnings.md". Never triggers on session-wrap phrasing ("wrap up", "end
   session", "session wrap", "close out this session") — that is session-wrap's
   scope, not this skill's.
 allowed-tools: Read, Write, Edit
@@ -31,7 +32,7 @@ Read `../_shared/learnings-protocol.md` and follow its **Reviewing** section. Al
 
 ## Step 1: Group and propose
 
-Group the filtered entries by the concern they express, however they are worded — this skill's own judgment, no fixed taxonomy. There is no minimum group size: a single `stated`, `corrected` or unmarked entry can be a promotion candidate. For an unmarked entry, judge from its wording whether the user said it, and say so in the proposal. Frequency is a signal, not a threshold.
+Group the filtered entries by the concern they express, however they are worded — this skill's own judgment, no fixed taxonomy. There is no minimum group size: a single `stated`, `corrected` or unmarked entry can be a promotion candidate. For an unmarked entry, judge from its wording whether the user said it, and say so in the proposal. Frequency is a signal, not a threshold. Context files are the ones registered in the `## Context files` table in `CLAUDE.md`; match them to an entry by their Summary column.
 
 Example:
 
@@ -72,7 +73,7 @@ Wait for the user's per-proposal decision — promote / keep / retire. Never app
 
 For each proposal the user approved for promotion: write the guidance to the approved target. If the target is CLAUDE.md, append as prose under a clearly labeled section (do not touch the `## Context files` or `## Key Config Files` tables). If the target is a registered context file, `_shared/*.md` or `SKILL.md` file, add the guidance in a location consistent with that file's existing structure.
 
-Remove all promoted and retired entries from .claude/learnings.md. Kept entries remain untouched. If no entries remain below the header after removal, delete .claude/learnings.md entirely.
+Remove all promoted and retired entries from .claude/learnings.md. Kept entries remain untouched. If no entries remain below the header after removal, delete .claude/learnings.md, or leave only the header if you cannot delete files.
 
 Perform no git operations of any kind — no git add, no git commit, no git anything. Writing and removing files is this skill's full scope; committing stays with the user's own workflow (FR-080a).
 

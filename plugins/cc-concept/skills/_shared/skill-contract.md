@@ -23,4 +23,4 @@ what it gates on, what it generates, and where it writes.
       defensibility, clarity). Improve where reasonable, but these never block on
       their own the way a non-negotiable does.
 6. **Delimited output** — return the artifact inside clear delimiters.
-7. **Two-phase feedback** — read `learnings-protocol.md` in this `_shared/` folder and follow its **Writing** section: auto-store qualifying observations tagged `[<plugin>:<skill-name>]` (source `inferred` unless the user said it), then ask for feedback and record any correction with source `corrected`. Finish with the protocol's **Confirming** section. Ask before promoting anything heavier.
+7. **Two-phase feedback** — read `learnings-protocol.md` in this `_shared/` folder and follow its **Writing** section: auto-store qualifying observations tagged `[cc-concept:<skill-name>]` (source `inferred` unless the user said it), then ask for feedback and record any correction with source `corrected`. Finish with the protocol's **Confirming** section. Ask before promoting anything heavier.

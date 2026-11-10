@@ -20,9 +20,7 @@ only GTM-specific behavior.
 
 ## Step 0–1: Recall learnings and load context
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in particular,
-launch-type preferences, rejected frameworks, or discovered strategy constraints. Do not
-announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, launch-type preferences, rejected frameworks, or discovered strategy constraints.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against the
 **Summary** column semantically — never against a label or filename:
@@ -213,11 +211,11 @@ artifact, not persistent context, the same rule campaign-concept follows.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:gtm-plan]` in `.claude/learnings.md`. Examples:
+Store learnings per the contract's Step 7, tagged `[cc-concept:gtm-plan]`. Examples:
 
 ```
-[cc-concept:gtm-plan] client's feature-release launches skip the audience-redefinition step entirely, existing segments always apply — 2026-07-19
-[cc-concept:gtm-plan] client wants milestone dates expressed as week-of-launch offsets (T-4, T-2, T0) rather than calendar dates — 2026-07-19
+[cc-concept:gtm-plan] client's feature-release launches skip the audience-redefinition step entirely, existing segments always apply (stated) — 2026-07-19
+[cc-concept:gtm-plan] client wants milestone dates expressed as week-of-launch offsets (T-4, T-2, T0) rather than calendar dates (corrected) — 2026-07-19
 ```
 
 If the session revealed a launch-type preference, framework override, or project constraint that

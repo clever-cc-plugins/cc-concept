@@ -24,9 +24,7 @@ add only onboarding-specific behavior. (Steps 5 and 6 from the contract are omit
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in particular,
-path preferences, rejected interview answers, or project constraints discovered in prior runs.
-Do not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, path preferences, rejected interview answers, or project constraints discovered in prior runs.
 
 ## Step 1: Discover existing context
 
@@ -142,12 +140,12 @@ match the ones in Step 2 so future coverage checks will find it. Do **not** hand
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:strategy-onboarding]` in `.claude/learnings.md`. For
+Store learnings per the contract's Step 7, tagged `[cc-concept:strategy-onboarding]`. For
 example:
 
 ```
-[cc-concept:strategy-onboarding] client prefers "go-to-market plan" over "GTM strategy" — 2026-07-17
-[cc-concept:strategy-onboarding] org-background file should ask about primary channels early — 2026-07-17
+[cc-concept:strategy-onboarding] client prefers "go-to-market plan" over "GTM strategy" (stated) — 2026-07-17
+[cc-concept:strategy-onboarding] org-background file should ask about primary channels early (inferred) — 2026-07-17
 ```
 
 If the session revealed a rejected answer, path preference, or project constraint that future

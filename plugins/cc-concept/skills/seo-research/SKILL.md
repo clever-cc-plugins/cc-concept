@@ -19,10 +19,7 @@ Adapts `../_shared/skill-contract.md`'s 8-step sequence. Step 1 includes MCP det
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently, across all plugin tags. Apply
-relevant entries — in particular, preferred seed topics, rejected frameworks, or
-discovered keyword patterns. Never announce this step; surface nothing unless it
-changes behavior.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, preferred seed topics, rejected frameworks, or discovered keyword patterns.
 
 ## Step 1: Load context and detect SEO tooling
 
@@ -246,13 +243,13 @@ requirement, not cosmetic.
 
 Do **not** hand-edit the **Key Config Files** table — the pre-commit hook owns that sync.
 
-Store learnings tagged `[cc-concept:seo-research]` in `.claude/learnings.md`.
+Store learnings per the contract's Step 7, tagged `[cc-concept:seo-research]`.
 Examples:
 
 ```
-[cc-concept:seo-research] client markets B2B SaaS; avoid consumer-marketing keywords, prioritize "how to" and "vs" informational intents — 2026-07-20
-[cc-concept:seo-research] Ubersuggest MCP tools available in session; keyword difficulty threshold appropriate for a mature domain (KD up to 60) — 2026-07-20
-[cc-concept:seo-research] interview revealed customers use "platform" more than "tool"; adjust keyword focus accordingly — 2026-07-20
+[cc-concept:seo-research] client markets B2B SaaS; avoid consumer-marketing keywords, prioritize "how to" and "vs" informational intents (stated) — 2026-07-20
+[cc-concept:seo-research] Ubersuggest MCP tools available in session; keyword difficulty threshold appropriate for a mature domain (KD up to 60) (inferred) — 2026-07-20
+[cc-concept:seo-research] interview revealed customers use "platform" more than "tool"; adjust keyword focus accordingly (inferred) — 2026-07-20
 ```
 
 If the session revealed a preferred seed topic, a keyword or clustering pattern, or a

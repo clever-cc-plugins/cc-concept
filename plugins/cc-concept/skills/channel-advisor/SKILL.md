@@ -20,9 +20,7 @@ add only channel-advisor-specific behavior.
 
 ## Step 0–1: Recall learnings and load context
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in particular,
-channel preferences, constraints, or vetoed channels. Do not announce this step. If the file
-is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, channel preferences, constraints, or vetoed channels.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against the
 **Summary** column semantically — never against a label or filename:
@@ -145,12 +143,12 @@ Return the channel recommendation inside clear delimiters:
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:channel-advisor]` in `.claude/learnings.md`.
+Store learnings per the contract's Step 7, tagged `[cc-concept:channel-advisor]`.
 Examples:
 
 ```
-[cc-concept:channel-advisor] client vetoed paid social entirely, treat as excluded from all future recommendations — 2026-07-19
-[cc-concept:channel-advisor] client's existing email list is small (<500) and shouldn't be weighted as a primary channel yet — 2026-07-19
+[cc-concept:channel-advisor] client vetoed paid social entirely, treat as excluded from all future recommendations (stated) — 2026-07-19
+[cc-concept:channel-advisor] client's existing email list is small (<500) and shouldn't be weighted as a primary channel yet (stated) — 2026-07-19
 ```
 
 If the session revealed a channel preference, constraint, or exclusion that future runs

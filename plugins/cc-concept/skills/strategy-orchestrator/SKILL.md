@@ -7,7 +7,7 @@ description: >
   order of cc-concept and cc-content skills to run, not a single deliverable.
   Recommends and sequences skills; never invokes them automatically. Defers to
   marketing-advisor for open-ended questions that aren't goal-shaped.
-allowed-tools: Read
+allowed-tools: Read, Write, Edit
 argument-hint: "[the business goal, in the user's own words]"
 ---
 
@@ -23,7 +23,7 @@ This skill matches a stated business goal to one of six engagement types, audits
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently, all plugin tags. Apply relevant entries (e.g., prior engagement-type preferences, market-specific overrides, or goal clarifications). Never announce.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, prior engagement-type preferences, market-specific overrides, or goal clarifications.
 
 ---
 
@@ -151,7 +151,7 @@ At the end, ask once:
 
 > "Should I save any learnings from this sequence (e.g., 'we always need SEO research for SMB campaigns' or 'we already validate positioning with customers') to `.claude/learnings.md`?"
 
-If the user names a learning, append it with the tag `[cc-concept:strategy-orchestrator]` and today's date.
+If the user names a learning, record it per the protocol's **Writing** section, tagged `[cc-concept:strategy-orchestrator]` with source `stated`, then follow its **Confirming** section.
 
 ---
 

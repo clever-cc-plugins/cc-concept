@@ -22,9 +22,7 @@ below add only positioning-specific behavior.
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, positioning preferences, rejected frameworks, or discovered constraints.
-Do not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, positioning preferences, rejected frameworks, or discovered constraints.
 
 ## Step 1: Load context
 
@@ -195,12 +193,12 @@ table — the pre-commit hook owns that sync.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-concept:positioning]` in `.claude/learnings.md`.
+Store learnings per the contract's Step 7, tagged `[cc-concept:positioning]`.
 Examples:
 
 ```
-[cc-concept:positioning] client prefers "differentiation" over "positioning" — 2026-07-17
-[cc-concept:positioning] SMB segment values cost-of-ownership more than feature breadth — 2026-07-17
+[cc-concept:positioning] client prefers "differentiation" over "positioning" (stated) — 2026-07-17
+[cc-concept:positioning] SMB segment values cost-of-ownership more than feature breadth (inferred) — 2026-07-17
 ```
 
 If the session revealed a rejected framework, positioning preference, or project

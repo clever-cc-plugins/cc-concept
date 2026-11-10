@@ -71,4 +71,5 @@ This skill never edits an existing context file it did not create.
 ```
 [cc-concept:marketing-advisor] client decided to deprioritize enterprise segment for the next two quarters, focus on SMB (stated) — 2026-07-19
 [cc-concept:marketing-advisor] client rejected a rebrand discussion as out of scope for this engagement (stated) — 2026-07-19
+[cc-concept:marketing-advisor] pricing messaging should wait until the competitor audit is done (advisor proposed it, client agreed to save it) (inferred) — 2026-07-19
 ```

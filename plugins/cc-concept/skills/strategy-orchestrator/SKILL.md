@@ -151,7 +151,7 @@ At the end, ask once:
 
 > "Should I save any learnings from this sequence (e.g., 'we always need SEO research for SMB campaigns' or 'we already validate positioning with customers') to `.claude/learnings.md`?"
 
-If the user names a learning, record it per the protocol's **Writing** section, tagged `[cc-concept:strategy-orchestrator]` with source `stated`, then follow its **Confirming** section.
+Record each learning per the protocol's **Writing** section, tagged `[cc-concept:strategy-orchestrator]`, then follow its **Confirming** section. Use source `stated` when the user names the learning in their own words, and `inferred` when they only accept one of the examples above or another suggestion you offered.
 
 ---
 
